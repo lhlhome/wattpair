@@ -10,20 +10,20 @@
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
     "date_modified": "2026-08-03",
-    "record_count": 30,
+    "record_count": 32,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. Start-up surge data does not exist for several appliance classes — not \"we did not find it\", but \"the manufacturers do not publish it\" — and those fields are null with a status of unknown rather than estimated. Read stats.null_fields and stats.surge_basis before using any figure.",
     "stats": {
-      "records": 30,
-      "sourced_fields": 229,
-      "null_fields": 177,
+      "records": 32,
+      "sourced_fields": 241,
+      "null_fields": 193,
       "surge_basis": {
         "category_rule_of_thumb": 3,
-        "unknown": 15,
+        "unknown": 17,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 0
+      "absence_verified_fields": 2
     },
     "exported_fields": {
       "record": [
@@ -4384,6 +4384,245 @@
       ]
     },
     {
+      "appliance_id": "portable-split-air-conditioner",
+      "name": "Portable split air conditioner (hose-through-window)",
+      "aliases": [
+        "portable split air conditioner",
+        "mobile split air conditioner",
+        "no-drill split air conditioner",
+        "portasplit",
+        "mobiles Splitgerät",
+        "mobile Split-Klimaanlage",
+        "Splitklimagerät ohne Bohren"
+      ],
+      "category": "hvac_cooling",
+      "subcategory": "portable_split_ac",
+      "scenario_tags": [
+        "home_backup",
+        "home_solar"
+      ],
+      "priority_tier": "comfort",
+      "electrical": {
+        "running_watts": {
+          "value": 1230,
+          "unit": "W",
+          "value_min": 950,
+          "value_max": 1500,
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 950,
+          "unit": "W",
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 1500,
+          "unit": "W",
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-03",
+            "sources_checked": [
+              "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+              "https://eprel.ec.europa.eu/api/products/airconditioners/2517927"
+            ],
+            "note": "The manufacturer's German user manual (2,296 lines of extracted text, including the complete Technische Daten table) was searched in full for Anlaufstrom, Einschaltstrom, Startstrom, Anlauf, blockierter Rotor, locked rotor and LRA: all seven terms return zero hits. The manual's only electrical entries are the EN 60335-1 nameplate rating and the rated figures for the two operating modes — no transient quantity of any kind. The EU EPREL registration (2517927) was pulled in full and confirms that Regulation 626/2011 asks split units for no start-up current, and in fact for no rated input power or rated current either. For a variable-speed compressor this absence is structural."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "inverter_driven_motor",
+        "motor_type": {
+          "value": "bldc_inverter",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "low",
+          "status": "verified"
+        },
+        "power_factor": {
+          "value": 0.93,
+          "unit": "ratio",
+          "value_min": 0.93,
+          "value_max": 0.97,
+          "display_precision": 2,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
+        },
+        "apparent_power_va": {
+          "value": 1610,
+          "unit": "VA",
+          "value_min": 989,
+          "value_max": 1610,
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-03",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "is_cyclic": false,
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "eu_energy_label",
+        "annual_kwh": {
+          "value": 135,
+          "unit": "kWh",
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners/2517927",
+          "verified_date": "2026-08-03",
+          "confidence": "high",
+          "status": "verified"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-03",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": false,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 3,
+        "coverage_pct": 50,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/duty_cycle/default_duty_cycle",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical.running_watts",
+            "electrical.running_watts_low",
+            "electrical.running_watts_high",
+            "electrical.power_factor",
+            "electrical.apparent_power_va",
+            "electrical.motor_type",
+            "electrical.startup_surge_multiplier",
+            "region_profiles.EU",
+            "environment_corrections",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners/2517927",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh",
+            "electrical.startup_surge_multiplier"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.US"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
       "appliance_id": "refrigerator-full-size",
       "name": "Full-size refrigerator",
       "aliases": [
@@ -6907,6 +7146,272 @@
             "region_profiles.EU"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
+      "appliance_id": "window-air-conditioner-inverter",
+      "name": "Inverter window air conditioner (U-shaped)",
+      "aliases": [
+        "inverter window ac",
+        "u-shaped window air conditioner",
+        "u shaped window ac",
+        "saddle air conditioner",
+        "straddle window air conditioner",
+        "variable speed window air conditioner",
+        "midea u"
+      ],
+      "category": "hvac_cooling",
+      "subcategory": "window_room_ac_inverter",
+      "scenario_tags": [
+        "home_backup",
+        "home_solar"
+      ],
+      "priority_tier": "comfort",
+      "electrical": {
+        "running_watts": {
+          "value": 667,
+          "unit": "W",
+          "value_min": 500,
+          "value_max": 800,
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "verified_date": "2026-08-03",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
+        },
+        "running_watts_low": {
+          "value": 500,
+          "unit": "W",
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "verified_date": "2026-08-03",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
+        },
+        "running_watts_high": {
+          "value": 800,
+          "unit": "W",
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "verified_date": "2026-08-03",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
+        },
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-03",
+            "sources_checked": [
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/u-shape-all-models/Midea%20U%20AC%20User%20Manual.pdf",
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw08u1qwt-/MAW08U1QWT-User-Manual.pdf",
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw12v1qwt/MAW12V1QWT-manual.pdf",
+              "https://data.energystar.gov/resource/5xn2-dv4h.json"
+            ],
+            "note": "Three official Midea U-series user manuals (5,306 lines of extracted text between them) were searched in full for LRA, locked rotor, inrush, starting current, rated current, amps, amperes, watts and rated power: all nine terms return zero hits in all three documents. These manuals carry no electrical specification table at all — not even a running current. The ENERGY STAR certified room air conditioner dataset (446 units, 28 fields) has no start-up current or locked-rotor field: the field does not exist rather than being left empty. For a variable-speed compressor this absence is structural, not a gap in our searching."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "inverter_driven_motor",
+        "motor_type": {
+          "value": "bldc_inverter",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "verified_date": "2026-08-03",
+          "confidence": "low",
+          "status": "verified"
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "is_cyclic": false,
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "us_energyguide",
+        "annual_kwh": {
+          "value": 500,
+          "unit": "kWh",
+          "value_min": 375,
+          "value_max": 600,
+          "display_precision": 0,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "verified_date": "2026-08-03",
+          "confidence": "high",
+          "status": "verified"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-03",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": false,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 3,
+        "coverage_pct": 50,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/duty_cycle/default_duty_cycle",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "electrical.running_watts",
+            "electrical.running_watts_low",
+            "electrical.running_watts_high",
+            "electrical.motor_type",
+            "energy.annual_kwh",
+            "region_profiles.US",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol3/pdf/CFR-2024-title10-vol3-part430-subpartB-appF.pdf",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "electrical.running_watts",
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/u-shape-all-models/Midea%20U%20AC%20User%20Manual.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical.startup_surge_multiplier",
+            "compatibility_guidance.known_incompatibilities"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw08u1qwt-/MAW08U1QWT-User-Manual.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical.startup_surge_multiplier",
+            "compatibility_guidance.known_incompatibilities",
+            "region_profiles.EU"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw12v1qwt/MAW12V1QWT-manual.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical.startup_surge_multiplier"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://pdf.lowes.com/productdocuments/f62024d8-d411-4e9d-b6c9-60e7578dc446/44082669.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical.running_watts.cross_check"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
