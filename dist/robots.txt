@@ -1,0 +1,15 @@
+# WattPair — https://wattpair.com/
+#
+# Indexing policy is NOT carried here. Per-page <meta name="robots"> is the
+# single mechanism, driven by src/lib/index-policy.ts, which also feeds the
+# @astrojs/sitemap filter so a noindex page can never appear in the sitemap.
+#
+# Disallow is deliberately absent: a Disallow blocks CRAWLING, not indexing —
+# a blocked URL can still be indexed from external links, and because the
+# crawler never fetches it the noindex meta tag is never seen. Blocking here
+# would defeat the very policy it looks like it is enforcing.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://wattpair.com/sitemap-index.xml

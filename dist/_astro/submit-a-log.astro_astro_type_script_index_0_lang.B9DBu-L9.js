@@ -1,0 +1,1 @@
+import{_ as s}from"./preload-helper.BlTxHScW.js";const t=document.getElementById("sl-form");if(t!==null){const o=()=>{s(()=>import("./submit-log.DbGmBKOl.js"),[]).then(e=>e.mount())};if("IntersectionObserver"in window){const e=new IntersectionObserver(n=>{n.some(r=>r.isIntersecting)&&(e.disconnect(),o())},{rootMargin:"300px"});e.observe(t)}else o()}

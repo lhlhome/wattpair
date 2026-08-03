@@ -1,0 +1,74 @@
+# =============================================================================
+# TEMPLATE — copied into the deploy repository by scripts/publish.sh as
+# .github/workflows/deploy.yml. It is NOT a workflow of this project's own
+# repository, which is why it lives under scripts/ rather than .github/.
+#
+# It uploads a PREBUILT site. There is deliberately no checkout-install-build
+# here: the deploy repository contains only the generated `dist/`, never the
+# source, so there is nothing to build and no toolchain to set up. Everything
+# that used to be a CI gate — typecheck, JSON Schema validation, unit tests,
+# the render contract — now runs on the developer's machine BEFORE the snapshot
+# is taken, and publish.sh refuses to snapshot if any of it is red. The gates
+# did not disappear; they moved upstream of the artifact.
+#
+# Consequences worth knowing:
+#   - what ships is exactly what was verified locally, byte for byte;
+#   - a red test can no longer reach the internet, because a red test means no
+#     snapshot and therefore no commit;
+#   - this workflow cannot "rebuild" anything. To change the site, rebuild and
+#     re-publish from the project repository.
+#
+# The site is deployed in PRODUCTION shape at https://wattpair.com/ — served
+# from the root, indexable per the 人工闸口 3 allowlist, sitemap emitted. That
+# is a property of the BUILD, baked into the artifact by publish.sh, not of
+# this file, and publish.sh's verify_tree refuses to snapshot anything else.
+# See the project repository: .github/workflows/deploy.yml (reference CI),
+# site/src/lib/base.ts and site/src/lib/index-policy.ts.
+#
+# The custom domain rides along in the artifact as dist/CNAME, alongside the
+# repository's own Pages setting. upload-pages-artifact takes `dist` as the
+# artifact ROOT, so dist/CNAME lands where Pages looks for it.
+# =============================================================================
+
+name: Deploy prebuilt site to GitHub Pages
+
+on:
+  # Manual only. The deploy repo is written by publish.sh, and publishing is a
+  # decision, not a consequence of a commit landing.
+  workflow_dispatch:
+
+# Least privilege: read the repo, write a Pages deployment, and mint the OIDC
+# token deploy-pages exchanges. No contents: write anywhere in this workflow.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel one in flight, so a half-uploaded
+# artifact cannot replace a working site.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Upload artifact and deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # `dist/` is the whole published site. Keeping it in a subdirectory
+      # rather than at the repo root is what lets README.md and this workflow
+      # live in the repo without being served as part of the site.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

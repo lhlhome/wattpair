@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="WattPair">
+  <!--
+    WattPair mark. Owner: Design Agent (P0-6b).
+    Brand teal #0F6E56 (the token named brand) on a card-radius square, with a
+    W drawn in mitred joins and butt terminals so it reads as a plotted trace
+    rather than a typeface glyph. The whole identity is the WattPair wordmark:
+    there is no icon, photo or illustration anywhere in the design system, so
+    the favicon is the wordmark's initial and nothing else.
+    Two colours, no gradient, no shadow. Legible at 16px on light and dark
+    browser chrome.
+    NOTE: this is parsed as strict XML when loaded via <img> or rel=icon. A
+    double hyphen inside a comment is a parse error, so keep them out.
+  -->
+  <rect width="32" height="32" rx="7" fill="#0F6E56" />
+  <path
+    d="M6.4 9 11.2 23 16 13.4 20.8 23 25.6 9"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="3.5"
+    stroke-linecap="butt"
+    stroke-linejoin="miter"
+    stroke-miterlimit="6"
+  />
+</svg>
