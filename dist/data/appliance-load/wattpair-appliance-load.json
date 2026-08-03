@@ -23,7 +23,7 @@
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 2
+      "absence_verified_fields": 3
     },
     "exported_fields": {
       "record": [
@@ -2075,7 +2075,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -2118,6 +2118,16 @@
             "region_profiles.US"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/product-groups",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -2289,7 +2299,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -2333,6 +2343,16 @@
             "region_profiles.US"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/product-groups",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -2710,7 +2730,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -2736,6 +2756,16 @@
             "compatibility_guidance"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/product-groups",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -3867,7 +3897,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -3909,6 +3939,26 @@
             "region_profiles.EU"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners?_page=1&_limit=25&modelIdentifier=MSZ-FS09NA",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners?_page=1&_limit=25&modelIdentifier=MSZ-",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -4074,7 +4124,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -4149,6 +4199,16 @@
             "region_profiles.EU"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners?_page=1&_limit=25&modelIdentifier=ARC-14S",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -4324,7 +4384,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -4379,6 +4439,76 @@
             "startup_surge_multiplier"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402146",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402148",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402153",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/407926",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402163",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402170",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019/402174",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -4619,6 +4749,26 @@
           ],
           "verified_date": "2026-08-03",
           "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners/1917520",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners/2714814",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
         }
       ]
     },
@@ -4812,7 +4962,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -4918,6 +5068,26 @@
             "surge_duration_ms"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019?_page=1&_limit=25&modelIdentifier=FFTR1814W",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/refrigeratingappliances2019?_page=1&_limit=25&modelIdentifier=MRQ22D7AST",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -5504,7 +5674,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -5546,6 +5716,26 @@
             "compatibility_guidance"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/localspaceheaters?_page=1&_limit=25&modelIdentifier=CWM%202000",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://web.archive.org/web/2024id_/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015R1186",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -6384,11 +6574,18 @@
           "source_url": null,
           "verified_date": null,
           "confidence": "unknown",
-          "status": "unknown"
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-03",
+            "sources_checked": [
+              "https://eprel.ec.europa.eu/api/products/washingmachines2019/1145659"
+            ],
+            "note": "Regulation (EU) 2019/2014 declares no annual figure for washing machines at all — the label and the registry carry energy consumption per 100 cycles. A published EPREL washing-machine record was pulled in full on 2026-08-03 to confirm the field set rather than assume it (registration 1145659, Bosch WIW28443, used here only as a probe of the schema): it exposes energyConsPer100Cycle = 62 and no annual-consumption field of any kind. Turning 100-cycle energy into an annual figure would take a cycles-per-year assumption that no EU document supplies, so this field stays empty rather than carrying an invented one."
+          }
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -6433,6 +6630,26 @@
             "energy"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/washingmachines2019?_page=1&_limit=25&modelIdentifier=WAN28281GB",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/washingmachines2019/1145659",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "energy.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -6937,9 +7154,9 @@
           "value_min": 100,
           "value_max": 300,
           "source_tier": "official",
-          "source_type": "brand_support_kb",
-          "source_url": "https://copeland.custhelp.com/app/answers/detail/a_id/2348/~/locked-rotor-amperage-(lra)",
-          "verified_date": "2026-08-01",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://apps.copeland.com/Publications/AEB/AE4_1331_R9.pdf",
+          "verified_date": "2026-08-03",
           "confidence": "low",
           "status": "verified"
         },
@@ -7146,6 +7363,26 @@
             "region_profiles.EU"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://apps.copeland.com/Publications/AEB/AE4_1331_R9.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "electrical.surge_duration_ms"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners?_page=1&_limit=25&modelIdentifier=WAC8003WCO",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
+          ],
+          "verified_date": "2026-08-03",
           "fetch_status": "ok"
         }
       ]
@@ -7410,6 +7647,16 @@
           "source_type": "brand_manual_pdf",
           "covers_fields": [
             "electrical.running_watts.cross_check"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eprel.ec.europa.eu/api/products/airconditioners?_page=1&_limit=25&modelIdentifier=MAW10V1QWT",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "region_profiles.EU.annual_kwh"
           ],
           "verified_date": "2026-08-03",
           "fetch_status": "ok"

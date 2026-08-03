@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/size-quiz.Dy-QxdO6.js","_astro/tool-ui.pgR6UO5a.js"])))=>i.map(i=>d[i]);
-import{_ as s}from"./preload-helper.BlTxHScW.js";const t=document.getElementById("sq-quiz");if(t){const o=()=>{s(()=>import("./size-quiz.Dy-QxdO6.js"),__vite__mapDeps([0,1])).then(e=>e.mount())};if(window.location.search.length>1)o();else if("IntersectionObserver"in window){const e=new IntersectionObserver(n=>{n.some(i=>i.isIntersecting)&&(e.disconnect(),o())},{rootMargin:"300px"});e.observe(t)}else o()}
