@@ -4300,7 +4300,8 @@
           "source_url": "https://www.secop.com/fileadmin/user_upload/SEPS/datasheets/en/bd35f_101z0200_r134a_12-24vdc_09-2024_desd100f802.pdf",
           "verified_date": "2026-08-01",
           "confidence": "medium",
-          "status": "verified"
+          "status": "verified",
+          "is_derived": true
         },
         "startup_surge_watts": {
           "value": 180,
@@ -4310,7 +4311,8 @@
           "source_url": "https://www.secop.com/fileadmin/user_upload/SEPS/datasheets/en/bd35f_101z0200_r134a_12-24vdc_09-2024_desd100f802.pdf",
           "verified_date": "2026-08-01",
           "confidence": "medium",
-          "status": "verified"
+          "status": "verified",
+          "is_derived": true
         },
         "surge_duration_ms": {
           "value": null,
@@ -5915,8 +5917,9 @@
           "source_type": "brand_support_kb",
           "source_url": "https://www.starlink.com/support/article/18836c7e-2d97-6153-fe67-c18427bd0558",
           "verified_date": "2026-08-01",
-          "confidence": "medium",
-          "status": "verified"
+          "confidence": "low",
+          "status": "conflict",
+          "is_derived": true
         }
       },
       "data_quality": {
