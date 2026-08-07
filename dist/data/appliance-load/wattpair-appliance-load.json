@@ -9,14 +9,14 @@
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
-    "date_modified": "2026-08-03",
+    "date_modified": "2026-08-07",
     "record_count": 32,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. Start-up surge data does not exist for several appliance classes — not \"we did not find it\", but \"the manufacturers do not publish it\" — and those fields are null with a status of unknown rather than estimated. Read stats.null_fields and stats.surge_basis before using any figure.",
     "stats": {
       "records": 32,
-      "sourced_fields": 241,
-      "null_fields": 193,
+      "sourced_fields": 242,
+      "null_fields": 192,
       "surge_basis": {
         "category_rule_of_thumb": 3,
         "unknown": 17,
@@ -2153,23 +2153,26 @@
       "priority_tier": "comfort",
       "electrical": {
         "running_watts": {
-          "value": 3000,
+          "value": 1500,
           "unit": "W",
+          "value_min": 1500,
+          "value_max": 3000,
           "source_tier": "official",
-          "source_type": "brand_product_page",
-          "source_url": "https://uk.russellhobbs.com/buckingham-stainless-steel-quiet-boil-kettle-20460",
-          "verified_date": "2026-08-01",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
+          "verified_date": "2026-08-07",
           "confidence": "high",
           "status": "verified"
         },
         "running_watts_low": {
-          "value": null,
+          "value": 1500,
           "unit": "W",
-          "source_tier": null,
-          "source_url": null,
-          "verified_date": null,
-          "confidence": "unknown",
-          "status": "unknown"
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
+          "verified_date": "2026-08-07",
+          "confidence": "high",
+          "status": "verified"
         },
         "running_watts_high": {
           "value": 3000,
@@ -2299,26 +2302,47 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-07",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
         "required_fields_total": 6,
-        "required_fields_verified": 3,
-        "coverage_pct": 50,
+        "required_fields_verified": 4,
+        "coverage_pct": 66.7,
         "unknown_field_paths": [
-          "/electrical/running_watts_low",
           "/electrical/startup_surge_multiplier",
           "/environment_corrections"
         ]
       },
       "sources": [
         {
+          "source_url": "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "running_watts",
+            "running_watts_low",
+            "region_profiles.US",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-07",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://hamiltonbeach.com/1-7-liter-glass-electric-kettle-40869",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.US"
+          ],
+          "verified_date": "2026-08-07",
+          "fetch_status": "ok"
+        },
+        {
           "source_url": "https://uk.russellhobbs.com/buckingham-stainless-steel-quiet-boil-kettle-20460",
           "source_tier": "official",
           "source_type": "brand_product_page",
           "covers_fields": [
-            "running_watts",
             "running_watts_high",
             "region_profiles.EU"
           ],
