@@ -15,15 +15,15 @@
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we opened the maker documentation we could find and came away with no start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
       "records": 32,
-      "sourced_fields": 240,
-      "null_fields": 195,
+      "sourced_fields": 238,
+      "null_fields": 197,
       "surge_basis": {
         "category_rule_of_thumb": 3,
         "unknown": 17,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 9
+      "absence_verified_fields": 11
     },
     "exported_fields": {
       "record": [
@@ -2155,8 +2155,6 @@
         "running_watts": {
           "value": 1500,
           "unit": "W",
-          "value_min": 1500,
-          "value_max": 3000,
           "source_tier": "official",
           "source_type": "brand_manual_pdf",
           "source_url": "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
@@ -2165,24 +2163,38 @@
           "status": "verified"
         },
         "running_watts_low": {
-          "value": 1500,
+          "value": null,
           "unit": "W",
-          "source_tier": "official",
-          "source_type": "brand_manual_pdf",
-          "source_url": "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
-          "verified_date": "2026-08-07",
-          "confidence": "high",
-          "status": "verified"
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://useandcares.hamiltonbeach.com/files/840228502.pdf",
+              "https://useandcares.hamiltonbeach.com/files/840252201.pdf",
+              "https://uk.russellhobbs.com/buckingham-stainless-steel-quiet-boil-kettle-20460"
+            ],
+            "note": "A band needs two ends from the same market, and this record has one figure per market rather than a spread within either. The pair that stood here until 2026-08-08 was a US machine at the low end and a UK machine at the high end — the same cross-market shape removed from washing-machine on the same day, and a spread across two mains standards is not a spread across a category. Within the US market we hold two Hamilton Beach rating tables, and both give the same number: doc 840228502 covers models 40864/40865/40866/40869/40876 at 120 V~ 60 Hz 1500 W, and Hamilton Beach's own product pages restate 1500 W for the 1.7-litre 40869 and the 1-litre 41065. Two readings of 1500 W are one point, not a range, so no US band is published here. The per-market figures live at the top level (US) and in region_profiles.EU. This record's load type is resistive, so the engine never read these two keys as a modulation curve; what they drove was the range printed on the page."
+          }
         },
         "running_watts_high": {
-          "value": 3000,
+          "value": null,
           "unit": "W",
-          "source_tier": "official",
-          "source_type": "brand_product_page",
-          "source_url": "https://uk.russellhobbs.com/buckingham-stainless-steel-quiet-boil-kettle-20460",
-          "verified_date": "2026-08-01",
-          "confidence": "high",
-          "status": "verified"
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://uk.russellhobbs.com/buckingham-stainless-steel-quiet-boil-kettle-20460"
+            ],
+            "note": "Same reading as the low end. The 3000 W that stood here until 2026-08-08 is the Russell Hobbs Buckingham 20460, a 230 V UK kettle, and it was the top of a range shown on a US-first page whose other end was a 120 V machine. It now lives only in region_profiles.EU.running_watts, where only EU stations meet it. One sourced EU model is one point, and we did not go looking for a second one to manufacture a European band out of; the record says what it holds."
+          }
         },
         "startup_surge_multiplier": {
           "value": null,
@@ -2302,7 +2314,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-07",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -3825,6 +3837,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "single_machine_modulation",
         "startup_surge_multiplier": {
           "value": 0.8,
           "unit": "ratio",
@@ -3921,7 +3934,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -4289,6 +4302,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": 1,
           "unit": "ratio",
@@ -4410,7 +4424,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -4594,6 +4608,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "single_machine_modulation",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -4722,7 +4737,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": false,
         "blocking_reason_count": 0,
@@ -7606,6 +7621,7 @@
           "status": "verified",
           "is_derived": true
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -7739,7 +7755,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": false,
         "blocking_reason_count": 0,
