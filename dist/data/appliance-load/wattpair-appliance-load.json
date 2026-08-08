@@ -9,21 +9,21 @@
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
-    "date_modified": "2026-08-07",
+    "date_modified": "2026-08-08",
     "record_count": 32,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we opened the maker documentation we could find and came away with no start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
       "records": 32,
-      "sourced_fields": 242,
-      "null_fields": 192,
+      "sourced_fields": 240,
+      "null_fields": 195,
       "surge_basis": {
         "category_rule_of_thumb": 3,
         "unknown": 17,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 5
+      "absence_verified_fields": 9
     },
     "exported_fields": {
       "record": [
@@ -5990,36 +5990,65 @@
       "priority_tier": "critical",
       "electrical": {
         "running_watts": {
-          "value": 920,
+          "value": 720,
           "unit": "W",
-          "value_min": 598,
-          "value_max": 1116,
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
-          "source_url": "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/280-Series_EN.pdf",
-          "verified_date": "2026-08-01",
+          "source_url": "https://www.littlegiant.com/products/sump--effluent-pumps--systems/sump-pumps----solids-handling/1-3-hp-sump-pumps/6-series/6-series-order-information/506125/",
+          "verified_date": "2026-08-08",
           "confidence": "medium",
           "status": "verified"
         },
         "running_watts_low": {
-          "value": 598,
+          "value": null,
           "unit": "W",
-          "source_tier": "official",
-          "source_type": "brand_spec_sheet",
-          "source_url": "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/250-Series_EN.pdf",
-          "verified_date": "2026-08-01",
-          "confidence": "medium",
-          "status": "verified"
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/250-Series_EN.pdf",
+              "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/280-Series_EN.pdf",
+              "https://www.watersourcett.com/wp-content/uploads/2015/09/Zoeller%20M53%20Technical%20Data.pdf",
+              "https://www.pumpagents.com/pdf/LittleGiantPumps/6-CIA.pdf"
+            ],
+            "note": "A watt band needs a second and a third machine whose real power is published, and on 2026-08-08 the electrical tables of every sump-pump document this record cites were read column by column for one. Liberty Pumps prints MODEL / HP / VOLTAGE / PHASE / FULL LOAD AMPS / LOCKED ROTOR AMPS / OVERLOAD TEMP / WINDING CLASS on both the 250 and the 280 engineering sheets and no watt column. Zoeller's FM2778 MODEL COMPARISON prints HP, voltage, phase, amps, RPM, motor type and insulation class and no watt column. Little Giant is the one maker in the class whose table carries a WATTS column, and it carries a single figure (720 W) for every 6-CIA item number, so it supplies a point and not a band. The current spread across the class is therefore recorded where it is measurable — as apparent power, in `apparent_power_va` (598–1116 VA) — and this field stays empty rather than restating volt-amps under a watt label, which is the exact defect G-42 was opened to remove."
+          }
         },
         "running_watts_high": {
-          "value": 1116,
+          "value": null,
           "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://www.watersourcett.com/wp-content/uploads/2015/09/Zoeller%20M53%20Technical%20Data.pdf",
+              "http://web.archive.org/web/2024id_/https://zoellerpumps.com/wp-content/uploads/sites/3/2024/07/fm2778.pdf",
+              "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/280-Series_EN.pdf"
+            ],
+            "note": "Same reading as the low end of the band. The machine that would set the top of a watt band is the Zoeller M53, whose current draw (9.7 A at 115 V) is the highest in the class, and neither the dealer-hosted FM2778 copy nor the manufacturer's own current revision 0724 of that sheet carries a watt figure for it — the MODEL COMPARISON table stops at amps. Its apparent power is held in `apparent_power_va.value_max` (1116 VA) with its source intact."
+          }
+        },
+        "apparent_power_va": {
+          "value": 1035,
+          "unit": "VA",
+          "value_min": 598,
+          "value_max": 1116,
+          "display_precision": 0,
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
-          "source_url": "https://www.watersourcett.com/wp-content/uploads/2015/09/Zoeller%20M53%20Technical%20Data.pdf",
-          "verified_date": "2026-08-01",
+          "source_url": "https://www.littlegiant.com/products/sump--effluent-pumps--systems/sump-pumps----solids-handling/1-3-hp-sump-pumps/6-series/6-series-order-information/506125/",
+          "verified_date": "2026-08-08",
           "confidence": "medium",
-          "status": "verified"
+          "status": "verified",
+          "is_derived": true
         },
         "startup_surge_multiplier": {
           "value": 2.88,
@@ -6068,13 +6097,16 @@
           "status": "verified"
         },
         "power_factor": {
-          "value": null,
+          "value": 0.69,
           "unit": "ratio",
-          "source_tier": null,
-          "source_url": null,
-          "verified_date": null,
-          "confidence": "unknown",
-          "status": "unknown"
+          "display_precision": 2,
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://www.littlegiant.com/products/sump--effluent-pumps--systems/sump-pumps----solids-handling/1-3-hp-sump-pumps/6-series/6-series-order-information/506125/",
+          "verified_date": "2026-08-08",
+          "confidence": "medium",
+          "status": "verified",
+          "is_derived": true
         },
         "requires_pure_sine": {
           "value": null,
@@ -6136,7 +6168,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -6150,11 +6182,45 @@
       },
       "sources": [
         {
-          "source_url": "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/280-Series_EN.pdf",
+          "source_url": "https://www.littlegiant.com/products/sump--effluent-pumps--systems/sump-pumps----solids-handling/1-3-hp-sump-pumps/6-series/6-series-order-information/506125/",
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
           "covers_fields": [
             "running_watts",
+            "apparent_power_va",
+            "power_factor",
+            "startup_surge_multiplier.cross_check"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "http://web.archive.org/web/2024id_/https://zoellerpumps.com/wp-content/uploads/sites/3/2024/07/fm2778.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "apparent_power_va.value_max",
+            "running_watts_high.absence_verified"
+          ],
+          "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.pumpagents.com/pdf/LittleGiantPumps/6-CIA.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts.cross_check"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.libertypumps.com/Portals/0/Files/Engineering%20Specifications/English/280-Series_EN.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "apparent_power_va.derivation",
             "startup_surge_multiplier",
             "startup_surge_watts"
           ],
@@ -6166,7 +6232,8 @@
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
           "covers_fields": [
-            "running_watts_low"
+            "apparent_power_va.value_min",
+            "running_watts_low.absence_verified"
           ],
           "verified_date": "2026-08-01",
           "fetch_status": "ok"
@@ -6176,7 +6243,8 @@
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
           "covers_fields": [
-            "running_watts_high",
+            "apparent_power_va.value_max",
+            "running_watts_high.absence_verified",
             "motor_type"
           ],
           "verified_date": "2026-08-01",
@@ -6490,7 +6558,7 @@
           "value": 1200,
           "unit": "W",
           "value_min": 1200,
-          "value_max": 2300,
+          "value_max": 1320,
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
           "source_url": "https://www.lg.com/us/support/products/documents/WM4000H_A%20Spec%20Sheet.pdf",
@@ -6499,24 +6567,39 @@
           "status": "verified"
         },
         "running_watts_low": {
-          "value": 1200,
+          "value": null,
           "unit": "W",
-          "source_tier": "official",
-          "source_type": "brand_spec_sheet",
-          "source_url": "https://www.lg.com/us/support/products/documents/WM4000H_A%20Spec%20Sheet.pdf",
-          "verified_date": "2026-08-01",
-          "confidence": "medium",
-          "status": "verified"
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://www.lg.com/us/support/products/documents/WM4000H_A%20Spec%20Sheet.pdf",
+              "https://products-salsify.geappliances.com/image/upload/s--qX_pxPQY--/xsjljv3lq4farsf1eube.pdf",
+              "https://media3.bosch-home.com/Documents/9001720787_A.pdf"
+            ],
+            "note": "This record's load type is inverter_driven_motor, and for that type the engine reads running_watts_low and running_watts_high as the bottom and the top of ONE machine's power-modulation curve, not as a spread across models (engine/compat.ts documents the distinction on the field itself). No such curve is published for any washing machine this record cites. LG's WM4000HWA specification sheet states a POWER SOURCE line — 120V, 10 Amps — and no minimum or maximum power input; GE's GFW350SSYWW sheet states an Electric Rating of 120V 11.0A 60Hz and likewise no power range; Bosch's WAN28281GB manual states a single Nominal power of 2300 W plus per-programme energy per cycle, which is energy over a whole cycle and not the instantaneous floor and ceiling of a modulating drive. The pair of figures that stood here until 2026-08-08 was a US machine at one end and a European machine at the other, which is neither one machine nor one market; it is now removed rather than restated, and the per-market figures live in region_profiles. What a modulation curve would unblock is a runtime interval instead of a point; the verdict itself is unaffected, because with no range the engine judges on the region-resolved running_watts."
+          }
         },
         "running_watts_high": {
-          "value": 2300,
+          "value": null,
           "unit": "W",
-          "source_tier": "official",
-          "source_type": "brand_manual_pdf",
-          "source_url": "https://media3.bosch-home.com/Documents/9001720787_A.pdf",
-          "verified_date": "2026-08-01",
-          "confidence": "high",
-          "status": "verified"
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://www.lg.com/us/support/products/documents/WM4000H_A%20Spec%20Sheet.pdf",
+              "https://media3.bosch-home.com/Documents/9001720787_A.pdf"
+            ],
+            "note": "Same reading as the low end. The 2300 W that stood here until 2026-08-08 is the Bosch WAN28281GB's nominal power on a 220-240 V supply — a European machine that heats its own water — and it was being applied as the top of the modulation curve for US pairings as well, so a 120 V verdict was decided by a machine not sold in the United States. Bosch publishes one nominal power and no modulation range; the figure now lives in region_profiles.EU.running_watts, where only EU stations meet it."
+          }
         },
         "startup_surge_multiplier": {
           "value": null,
@@ -6651,7 +6734,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-03",
+        "last_review_date": "2026-08-08",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -6664,6 +6747,18 @@
         ]
       },
       "sources": [
+        {
+          "source_url": "https://products-salsify.geappliances.com/image/upload/s--qX_pxPQY--/xsjljv3lq4farsf1eube.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts.value_max",
+            "region_profiles.US.running_watts.cross_check",
+            "running_watts_low.absence_verified"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
         {
           "source_url": "https://media3.bosch-home.com/Documents/9001720787_A.pdf",
           "source_tier": "official",
