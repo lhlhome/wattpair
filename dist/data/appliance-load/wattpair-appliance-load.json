@@ -10,20 +10,20 @@
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
     "date_modified": "2026-08-08",
-    "record_count": 32,
+    "record_count": 34,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
-      "records": 32,
-      "sourced_fields": 238,
-      "null_fields": 197,
+      "records": 34,
+      "sourced_fields": 249,
+      "null_fields": 215,
       "surge_basis": {
         "category_rule_of_thumb": 3,
-        "unknown": 17,
+        "unknown": 19,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 11
+      "absence_verified_fields": 19
     },
     "exported_fields": {
       "record": [
@@ -4001,6 +4001,293 @@
       ]
     },
     {
+      "appliance_id": "oxygen-concentrator",
+      "name": "Home oxygen concentrator",
+      "aliases": [
+        "oxygen concentrator",
+        "home oxygen concentrator",
+        "stationary oxygen concentrator",
+        "oxygen machine",
+        "o2 concentrator",
+        "5 lpm concentrator",
+        "10 lpm concentrator",
+        "Sauerstoffkonzentrator"
+      ],
+      "category": "medical",
+      "subcategory": "oxygen_concentrator_stationary",
+      "scenario_tags": [
+        "home_backup",
+        "rv_vanlife"
+      ],
+      "priority_tier": "critical",
+      "electrical": {
+        "running_watts": {
+          "value": 310,
+          "unit": "W",
+          "value_min": 275,
+          "value_max": 639,
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 275,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 639,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://shop.drivemedical.com/us/en/c/devilbiss-10-liter-oxygen-concentrator/p/1025DS/downloadPdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_band_basis": "cross_model_spread",
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+              "https://shop.drivemedical.com/us/en/c/devilbiss-10-liter-oxygen-concentrator/p/1025DS/downloadPdf",
+              "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+              "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf",
+              "https://www.inogen.com/wp-content/uploads/2024/09/Inogen-At-Home-GS-100-Spec-Sheet.pdf"
+            ],
+            "note": "Two manufacturers' documents were read end to end on 2026-08-08 — Drive DeVilbiss's US spec sheets for the 5-litre and 10-litre machines, the DeVilbiss 5-Litre Series instruction guide SE-525KS-3, and Inogen's At Home technical manual and spec sheet. None of the five carries an inrush, locked-rotor or peak-current figure for the compressor: the electrical lines they do carry are a nameplate rating, an operating voltage range and an average power consumption, all of them steady-state quantities. Our search covered these five documents; we make no claim about documents we did not open."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "unknown",
+        "motor_type": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+              "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf"
+            ],
+            "note": "Both manuals name a compressor as a serviceable assembly — Inogen's technical manual gives it a 20,000-run-hour service interval — but neither states how that compressor is driven. Induction, brushed universal and brushless DC drives are all in use across this product class and the two documents we read distinguish none of them, so the drive type is left empty and `load_type` is left at unknown rather than inferred from the word 'compressor'."
+          }
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+              "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+              "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf"
+            ],
+            "note": "None of the three documents states a power factor or a volt-amp figure. The DeVilbiss series table does carry both an average power consumption and a nameplate current on the same page, but they describe different operating points — one is an average at a stated flow rate, the other a rating — so dividing one by the other would manufacture a power factor that no measurement supports. It is left empty deliberately, which also keeps the engine's volt-amp gate shut on this record."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+              "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+              "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf"
+            ],
+            "note": "No volt-amp figure appears in any of the three documents. The nameplate line in the DeVilbiss series table is a rating rather than a reading, and this library does not store a ceiling in a field that the engine and the templates both read as a value."
+          }
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+              "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+              "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf",
+              "https://www.inogen.com/wp-content/uploads/2024/09/Inogen-At-Home-GS-100-Spec-Sheet.pdf"
+            ],
+            "note": "Four documents from two manufacturers were read for a waveform requirement on 2026-08-08 and none of them names one: no sentence in the four mentions an inverter, a sine wave, or a waveform of any kind. The CPAP record in this library carries a waveform requirement because ResMed writes one down; nothing comparable was found here, and this field is left empty rather than filled by analogy with a different device class."
+          }
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "min_voltage_tolerance_v": {
+          "value": 97,
+          "unit": "V",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "is_cyclic": false,
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-08",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 4,
+        "coverage_pct": 66.7,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/electrical/power_factor"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://shop.drivemedical.com/us/en/products/respiratory/oxygen-therapy/oxygen-concentrators/stationary-concentrators/devilbiss-5-liter-oxygen-concentrator/p/525DS-Q/downloadPdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts",
+            "running_watts_low",
+            "region_profiles.US.running_watts"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://shop.drivemedical.com/us/en/c/devilbiss-10-liter-oxygen-concentrator/p/1025DS/downloadPdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts_high"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://drivemedical.de/ALL_PRODUCT_Media/RESPIRATORY/Oxygen/525KS/pdf/User%20Manual/SE-525KS-3%20Rev%20B_FINAL.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "region_profiles.EU.running_watts",
+            "min_voltage_tolerance_v",
+            "environment_corrections"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.inogen.com/pdf/96-05070-00-01C-Technical-Manual-Inogen-At-Home.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "duty_cycle",
+            "environment_corrections"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.inogen.com/wp-content/uploads/2024/09/Inogen-At-Home-GS-100-Spec-Sheet.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
       "appliance_id": "portable-air-conditioner",
       "name": "Portable air conditioner",
       "aliases": [
@@ -4809,6 +5096,252 @@
             "energy.annual_kwh"
           ],
           "verified_date": "2026-08-03",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
+      "appliance_id": "projector",
+      "name": "Video projector",
+      "aliases": [
+        "projector",
+        "video projector",
+        "home cinema projector",
+        "outdoor projector",
+        "movie projector",
+        "beamer",
+        "portable projector",
+        "laser projector",
+        "Beamer"
+      ],
+      "category": "av_entertainment",
+      "subcategory": "video_projector",
+      "scenario_tags": [
+        "camping",
+        "rv_vanlife"
+      ],
+      "priority_tier": "luxury",
+      "electrical": {
+        "running_watts": {
+          "value": 345,
+          "unit": "W",
+          "value_min": 102,
+          "value_max": 386,
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 102,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/fde3c4cabe375ca48ae8fcb448caec8b30a049df/original?assetDescr=EpiqVision_EF12_Mini_Streaming_Laser_Projector_Specification_Sheet_CPD-59737.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 386,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/acb17f80e70dda3a29f56fdd665b9bc2f2901ff6/original?assetDescr=Home_Cinema_3200_Projector_Specification_Sheet_CPD-58081",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_band_basis": "cross_model_spread",
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/acb17f80e70dda3a29f56fdd665b9bc2f2901ff6/original?assetDescr=Home_Cinema_3200_Projector_Specification_Sheet_CPD-58081",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/fde3c4cabe375ca48ae8fcb448caec8b30a049df/original?assetDescr=EpiqVision_EF12_Mini_Streaming_Laser_Projector_Specification_Sheet_CPD-59737.pdf"
+            ],
+            "note": "Three Epson specification sheets were read in full on 2026-08-08 and none of them states an inrush or peak current. Every electrical line in the three is a steady-state quantity: a mode-by-mode power consumption block, a supply voltage range and the current that range draws. That is what this library expects of a switch-mode supply — there is no locked rotor here to publish a figure for — and the engine treats the absence accordingly rather than capping a verdict for it."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "switching_electronic",
+        "motor_type": {
+          "value": "none",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "medium",
+          "status": "verified"
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/acb17f80e70dda3a29f56fdd665b9bc2f2901ff6/original?assetDescr=Home_Cinema_3200_Projector_Specification_Sheet_CPD-58081",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/fde3c4cabe375ca48ae8fcb448caec8b30a049df/original?assetDescr=EpiqVision_EF12_Mini_Streaming_Laser_Projector_Specification_Sheet_CPD-59737.pdf"
+            ],
+            "note": "No power factor and no volt-amp figure appears in any of the three sheets. The Home Cinema 880 sheet does print a current, but as a pair spanning the input range — 3.5 A at the 100 V end and 1.6 A at the 240 V end — so it is a rating for the whole range rather than a reading taken alongside the 345 W. Multiplying either end by its voltage gives two different volt-amp answers (350 and 384), which is how a rating behaves and not how a measurement behaves; no power factor is derived from it."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/acb17f80e70dda3a29f56fdd665b9bc2f2901ff6/original?assetDescr=Home_Cinema_3200_Projector_Specification_Sheet_CPD-58081",
+              "https://mediaserver.goepson.com/ImConvServlet/imconv/fde3c4cabe375ca48ae8fcb448caec8b30a049df/original?assetDescr=EpiqVision_EF12_Mini_Streaming_Laser_Projector_Specification_Sheet_CPD-59737.pdf"
+            ],
+            "note": "Three specification sheets were read on 2026-08-08 for a waveform requirement and none of the three mentions an inverter or a waveform of any kind. What all three do state is a 100–240 V, 50/60 Hz input range, which is the signature of a switch-mode supply; this record therefore leaves the requirement empty rather than asserting either that one exists or that none does."
+          }
+        },
+        "standby_watts": {
+          "value": 0.3,
+          "unit": "W",
+          "value_min": 0.3,
+          "value_max": 0.5,
+          "display_precision": 1,
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+          "verified_date": "2026-08-08",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "is_cyclic": false,
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-08",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 5,
+        "coverage_pct": 83.3,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/be8a3a0944f4c8c0c45ec06762d1164e44adbb52/original?assetDescr=HC880_Product-Spec-Sheet_CPD-59951.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts",
+            "standby_watts",
+            "motor_type",
+            "duty_cycle",
+            "environment_corrections"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/acb17f80e70dda3a29f56fdd665b9bc2f2901ff6/original?assetDescr=Home_Cinema_3200_Projector_Specification_Sheet_CPD-58081",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts_high",
+            "standby_watts",
+            "environment_corrections"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://mediaserver.goepson.com/ImConvServlet/imconv/fde3c4cabe375ca48ae8fcb448caec8b30a049df/original?assetDescr=EpiqVision_EF12_Mini_Streaming_Laser_Projector_Specification_Sheet_CPD-59737.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "running_watts_low",
+            "environment_corrections"
+          ],
+          "verified_date": "2026-08-08",
           "fetch_status": "ok"
         }
       ]
