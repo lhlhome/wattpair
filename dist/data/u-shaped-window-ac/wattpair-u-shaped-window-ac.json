@@ -171,7 +171,7 @@
         "field": "start_up_surge",
         "value": null,
         "status": "unknown",
-        "finding": "This filing has no start-up current, locked-rotor or inrush column — the field does not exist upstream rather than being left empty — and no manufacturer of a variable-speed room air conditioner publishes one either. Every machine in this file is variable-speed, so this absence covers all 204 rows.",
+        "finding": "This filing has no start-up current, locked-rotor or inrush column — the field does not exist upstream rather than being left empty — and we have found no published figure in the maker documents we read either. Every machine in this file is variable-speed, so this absence covers all 204 rows.",
         "checked_date": "2026-08-03",
         "sources_checked": [
           "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/u-shape-all-models/Midea%20U%20AC%20User%20Manual.pdf",

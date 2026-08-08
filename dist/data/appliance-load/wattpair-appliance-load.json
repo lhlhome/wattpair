@@ -3,7 +3,7 @@
     "id": "wattpair-appliance-load",
     "name": "WattPair Appliance Load & Surge Provenance Dataset",
     "version": "0.1.0",
-    "description": "Running watts, start-up surge, duty cycle and annual energy for 30 household and off-grid appliance classes, where every figure carries the source document it was read from, the tier of that source, the date it was verified and a confidence rating. The distinguishing property is not coverage but provenance: fields we opened the maker documentation for and found nothing in are present and explicitly null rather than filled with an estimate, and the basis of each surge figure is labelled (nameplate locked-rotor amperage, manufacturer-stated, category envelope, or unknown) so a reader can tell a measured inrush from a rule of thumb. Compiled from manufacturer specification sheets and manuals, government efficiency filings and standards documents. Published by WattPair under CC BY 4.0.",
+    "description": "Running watts, start-up surge, duty cycle and annual energy for 30 household and off-grid appliance classes, where every figure carries the source document it was read from, the tier of that source, the date it was verified and a confidence rating. The distinguishing property is not coverage but provenance: fields we have found no published figure for are present and explicitly null rather than filled with an estimate, and the basis of each surge figure is labelled (nameplate locked-rotor amperage, manufacturer-stated, category envelope, or unknown) so a reader can tell a measured inrush from a rule of thumb. Compiled from manufacturer specification sheets and manuals, government efficiency filings and standards documents. Published by WattPair under CC BY 4.0.",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "license_name": "CC BY 4.0",
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
@@ -12,7 +12,7 @@
     "date_modified": "2026-08-08",
     "record_count": 32,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
-    "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we opened the maker documentation we could find and came away with no start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
+    "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
       "records": 32,
       "sourced_fields": 238,
