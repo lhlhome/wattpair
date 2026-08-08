@@ -23,7 +23,7 @@
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 3
+      "absence_verified_fields": 5
     },
     "exported_fields": {
       "record": [
@@ -6103,7 +6103,16 @@
           "source_url": null,
           "verified_date": null,
           "confidence": "unknown",
-          "status": "unknown"
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://web.archive.org/web/20240519163711id_/https://zoellerpumps.com/wp-content/uploads/sites/3/2023/10/fm2778.pdf",
+              "https://www.amazingmachinery.com/user-manual/fm2676_151797.pdf",
+              "https://web.archive.org/web/20260410145001id_/https://zoellerpumps.com/2024/10/01/optimum-sump-pump-run-time/"
+            ],
+            "note": "On 2026-08-08 three Zoeller documents were opened and searched for a duty cycle, a cycles-per-hour count or a minutes-per-hour figure. Zoeller technical data sheet FM2778 (the whole MODEL COMPARISON and PRODUCT SPECIFICATIONS tables) prints HP, voltage, phase, amps, RPM, motor type, insulation class and motor protection, and no duty cycle. Installation and operating manual FM2676 prints none either; its only statement on the subject is that the installer should obtain the proper tether to customize the on-off cycle to each application — the manufacturer saying the on-off rhythm is set on site. Zoeller's own article What Is the Optimum Sump Pump Run Time? opens by stating that there is no set optimum run time for a sump pump; what it does give is installation guidance (avoid short cycling, target a minimum of one minute per cycle with at least five minutes of rest between activations, and note that fifteen to twenty cycles per hour could overheat the pump), which is an install-time setup target and not the measured duty cycle of any model. No duty cycle is derived from that guidance: the actual value is set by groundwater infiltration rate, a property of the site rather than of the machine, so this is a structural absence and not a gap a further search would close. The unblocking path is user input (pit depth, infiltration rate, on-off interval)."
+          }
         },
         "is_cyclic": true,
         "cycle_period_min": {
@@ -6201,6 +6210,36 @@
             "surge_duration_ms"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://web.archive.org/web/20240519163711id_/https://zoellerpumps.com/wp-content/uploads/sites/3/2023/10/fm2778.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "duty_cycle.default_duty_cycle"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.amazingmachinery.com/user-manual/fm2676_151797.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "duty_cycle.default_duty_cycle"
+          ],
+          "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://web.archive.org/web/20260410145001id_/https://zoellerpumps.com/2024/10/01/optimum-sump-pump-run-time/",
+          "source_tier": "official",
+          "source_type": "brand_support_kb",
+          "covers_fields": [
+            "duty_cycle.default_duty_cycle"
+          ],
+          "verified_date": "2026-08-08",
           "fetch_status": "ok"
         }
       ]
@@ -7564,7 +7603,18 @@
           "source_url": null,
           "verified_date": null,
           "confidence": "unknown",
-          "status": "unknown"
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-08",
+            "sources_checked": [
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/u-shape-all-models/Midea%20U%20AC%20User%20Manual.pdf",
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw08u1qwt-/MAW08U1QWT-User-Manual.pdf",
+              "https://www.midea.com/content/dam/midea-aem/us/air-conditioners/window-air-conditioners/maw12v1qwt/MAW12V1QWT-manual.pdf",
+              "https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol3/pdf/CFR-2024-title10-vol3-part430-subpartB-appF.pdf",
+              "https://data.energystar.gov/resource/5xn2-dv4h.json"
+            ],
+            "note": "On 2026-08-08 the three Midea U-shaped inverter window-AC manuals this record already cites were re-read in full and word-searched for duty cycle, modulation, part-load and compressor speed. The only hit is one operating instruction in the MAW08U1QWT manual (in TurboCool the unit runs at the highest fan and compressor speed); no modulation curve and no time fraction appear anywhere. The DOE test procedure at 10 CFR 430 subpart B appendix F and the ENERGY STAR certified room-AC dataset were checked the same day. Appendix F does publish three numbers for variable-speed room air conditioners, and none of them is a duty cycle: (1) the weighting factors Wtc across the four condenser-inlet test conditions (95/92/87/83 °F, 0.08 for the first) weight outdoor-temperature bins for an efficiency rating, not run time; (2) the cycling loss factor CLF describes the theoretical comparable SINGLE-speed unit the variable-speed machine is scored against, not the variable-speed machine itself; (3) the 0.75 coefficient in AECcool is, in the regulation's own words, 750 annual operating hours multiplied by a 0.001 kWh/Wh conversion — an annual-usage assumption, a different quantity from the fraction of rated power this field would carry, and mistaking one for the other would present annual energy as an instantaneous load. No usable figure exists in any of these sources."
+          }
         },
         "is_cyclic": false,
         "typical_daily_runtime_h": {
