@@ -9,21 +9,21 @@
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
-    "date_modified": "2026-08-08",
-    "record_count": 34,
+    "date_modified": "2026-08-09",
+    "record_count": 36,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
-      "records": 34,
-      "sourced_fields": 249,
-      "null_fields": 215,
+      "records": 36,
+      "sourced_fields": 258,
+      "null_fields": 235,
       "surge_basis": {
         "category_rule_of_thumb": 3,
-        "unknown": 19,
+        "unknown": 21,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 19
+      "absence_verified_fields": 26
     },
     "exported_fields": {
       "record": [
@@ -531,6 +531,541 @@
             "region_profiles.US"
           ],
           "verified_date": "2026-08-01",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
+      "appliance_id": "aquarium-air-pump",
+      "name": "Aquarium air pump",
+      "aliases": [
+        "aquarium air pump",
+        "fish tank air pump",
+        "aquarium aerator",
+        "fish tank bubbler",
+        "aquarium bubbler",
+        "air pump for fish tank",
+        "Aquarium Luftpumpe"
+      ],
+      "category": "water",
+      "subcategory": "aquarium_air_pump",
+      "scenario_tags": [
+        "home_backup"
+      ],
+      "priority_tier": "critical",
+      "electrical": {
+        "running_watts": {
+          "value": 2.8,
+          "unit": "W",
+          "value_min": 1.5,
+          "value_max": 3.8,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 1.5,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 3.8,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_band_basis": "cross_model_spread",
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air200",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air100",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air400"
+            ],
+            "note": "Four manufacturer documents from two brands were read end to end on 2026-08-09 — Aqueon's US instruction manual covering all five QuietFlow air pump sizes, and EHEIM's three air-pump product pages. None of the four carries an inrush, start-up current, locked-rotor or peak-current figure. Aqueon's specification table lists a wattage and a mains rating per model and nothing else electrical; EHEIM's technical data lists a wattage, a frequency, an air output and a pump head, and states no voltage at all. Our search covered these four documents; we make no claim about documents we did not open."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "unknown",
+        "motor_type": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air200"
+            ],
+            "note": "Aqueon's manual names the pumping element without naming the drive: its maintenance section tells the owner to replace worn internal rubber diaphragms, check valves and filter pads, and its parts table lists one or two diaphragms per model. Nothing in it says what moves those diaphragms. EHEIM's product page describes noise, outlets, feet and accessories and states no drive type either. Both brands leave the electrical drive unstated, so this field is left empty and `load_type` is left at unknown rather than inferred from the word 'diaphragm'."
+          }
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air200"
+            ],
+            "note": "Neither document states a power factor, a volt-amp figure or a current. With no current published anywhere, there is not even a pair of numbers here to divide, and the field is left empty deliberately — which also keeps the engine's volt-amp gate shut on this record."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air200"
+            ],
+            "note": "Two documents were read for a waveform requirement on 2026-08-09 and neither names one: no sentence in either mentions an inverter, a sine wave, or a waveform of any kind. Aqueon's manual does carry an extension-cord clause and a polarised-plug clause, which is the closest it comes to describing what it may be plugged into. The field is left empty rather than filled by analogy with another record."
+          }
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "low",
+          "status": "verified"
+        },
+        "is_cyclic": false,
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-09",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 2,
+        "coverage_pct": 33.3,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/electrical/motor_type",
+          "/electrical/power_factor",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/specialty-equipment/quietflow-air-pumps_all-5-sizes-pdf.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "running_watts",
+            "running_watts_low",
+            "running_watts_high",
+            "region_profiles.US.running_watts",
+            "duty_cycle.default_duty_cycle",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air200",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air100",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts_low"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/air-pumps/air/air400",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts_high"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
+      "appliance_id": "aquarium-heater",
+      "name": "Aquarium heater",
+      "aliases": [
+        "aquarium heater",
+        "fish tank heater",
+        "submersible aquarium heater",
+        "aquarium water heater",
+        "fish tank water heater",
+        "reef tank heater",
+        "saltwater aquarium heater",
+        "Aquarienheizer"
+      ],
+      "category": "hvac_heating",
+      "subcategory": "aquarium_submersible_heater",
+      "scenario_tags": [
+        "home_backup"
+      ],
+      "priority_tier": "critical",
+      "electrical": {
+        "running_watts": {
+          "value": 100,
+          "unit": "W",
+          "value_min": 50,
+          "value_max": 300,
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 50,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 300,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_band_basis": "cross_model_spread",
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-100",
+              "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-25",
+              "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-300"
+            ],
+            "note": "Five manufacturer documents from two brands were read end to end on 2026-08-09 — Aqueon's two US instruction manuals covering the TA and AP heater ranges, and three EHEIM thermocontrol product pages. None of the five carries an inrush, start-up current or peak-current figure. The electrical lines they do carry are a wattage per model, a mains rating on the Aqueon covers (120 Volts, 60 Hz) and a frequency on the EHEIM pages (50 Hz), all of them steady-state quantities. Our search covered these five documents; we make no claim about documents we did not open."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "resistive",
+        "motor_type": {
+          "value": "none",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-100"
+            ],
+            "note": "None of the three documents states a power factor or a volt-amp figure, and none states a current either, so there is not even a pair of numbers here to divide. The field is left empty deliberately, which also keeps the engine's volt-amp gate shut on this record."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+              "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
+              "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-100"
+            ],
+            "note": "Three documents were read for a waveform requirement on 2026-08-09 and none of them names one: no sentence in the three mentions an inverter, a sine wave, or a waveform of any kind. Both Aqueon manuals do carry an extension-cord clause and a polarised-plug clause, which is the closest either comes to describing what it may be plugged into. The field is left empty rather than filled by analogy with another heating record."
+          }
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "low",
+          "status": "verified"
+        },
+        "is_cyclic": true,
+        "cycle_period_min": {
+          "value": null,
+          "unit": "min",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-09",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 3,
+        "coverage_pct": 50,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/electrical/power_factor",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/glass-adjustable-heater_instruction_all-sizes-pdf.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "running_watts",
+            "running_watts_low",
+            "running_watts_high",
+            "motor_type",
+            "region_profiles.US.running_watts",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "duty_cycle.default_duty_cycle"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-100",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-25",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts_low"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-300",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles.EU.running_watts_high"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://eheim.com/en_GB/aquatics/technology/aquarium-heaters/thermocontrol/thermocontrol-200",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [],
+          "verified_date": "2026-08-09",
           "fetch_status": "ok"
         }
       ]
