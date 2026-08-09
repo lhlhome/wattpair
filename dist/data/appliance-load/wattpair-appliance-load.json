@@ -10,20 +10,20 @@
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
     "date_modified": "2026-08-09",
-    "record_count": 36,
+    "record_count": 38,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
-      "records": 36,
-      "sourced_fields": 258,
-      "null_fields": 235,
+      "records": 38,
+      "sourced_fields": 267,
+      "null_fields": 254,
       "surge_basis": {
         "category_rule_of_thumb": 3,
-        "unknown": 21,
+        "unknown": 23,
         "manufacturer_stated": 5,
         "nameplate_lra": 7
       },
-      "absence_verified_fields": 26
+      "absence_verified_fields": 32
     },
     "exported_fields": {
       "record": [
@@ -3144,6 +3144,242 @@
       ]
     },
     {
+      "appliance_id": "hair-dryer",
+      "name": "Hair dryer",
+      "aliases": [
+        "hair dryer",
+        "hairdryer",
+        "blow dryer",
+        "blow-dryer",
+        "hair blower",
+        "travel hair dryer",
+        "Haartrockner",
+        "Föhn"
+      ],
+      "category": "personal_care",
+      "subcategory": "handheld_hair_dryer",
+      "scenario_tags": [
+        "home_backup",
+        "rv_vanlife"
+      ],
+      "priority_tier": "comfort",
+      "electrical": {
+        "running_watts": {
+          "value": 1875,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw19b17334/Instructional%20Booklets/530RN.pdf",
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw05287c2e/Instructional%20Booklets/127NPN.pdf",
+              "https://www.documents.philips.com/assets/20220423/4f029b58b4b54487bb48ae80011da39d.pdf"
+            ],
+            "note": "Four manufacturer documents from two brands were read end to end on 2026-08-09 — Conair's instruction guides for the 285, 530 and 127L dryer lines, and Philips's product leaflet for the BHD351/10 — and none of the four carries an inrush, start-up current, peak current or locked-rotor figure. Between them the only electrical quantities they state are a wattage per model, a supply range on the Conair side (alternating current at 60 hertz, 110 to 125 volts, with a factory setting of 125 volts on the dual-voltage model) and a wattage plus a 220 to 240 volt range on the Philips side. The Conair guides do name a 15 amp circuit breaker and a 15 amp fuse, but those are the ratings of the protective devices the maker warns about tripping, not a current the dryer was measured drawing. This appliance does contain a motor, so an inrush certainly exists; what is absent is anyone publishing it. Our search covered these four documents; we make no claim about documents we did not open."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "mixed",
+        "motor_type": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw19b17334/Instructional%20Booklets/530RN.pdf",
+              "https://www.documents.philips.com/assets/20220423/4f029b58b4b54487bb48ae80011da39d.pdf"
+            ],
+            "note": "None of the three documents states a power factor or a volt-amp figure. Neither brand publishes a measured operating current either, so there is not even a pair of numbers here to divide: the only amperage anywhere in the Conair guides is the rating of a circuit breaker and a fuse. The field is left empty deliberately, which also keeps the engine's volt-amp gate shut on this record."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw19b17334/Instructional%20Booklets/530RN.pdf",
+              "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw05287c2e/Instructional%20Booklets/127NPN.pdf"
+            ],
+            "note": "Three Conair guides were read for a waveform requirement on 2026-08-09 and none of them names one: no sentence in the three mentions an inverter, a sine wave, or a waveform of any kind. What they do carry about the supply is a frequency and a voltage window, a polarised-plug clause, an instruction not to run the dryer from an extension cord, and on the dual-voltage model an instruction not to use a voltage converter. That last clause is about voltage conversion, not about waveform, and is not read here as a waveform requirement. The field is left empty rather than inferred from the presence of a motor."
+          }
+        },
+        "standby_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "medium",
+          "status": "verified"
+        },
+        "is_cyclic": false,
+        "cycle_period_min": {
+          "value": null,
+          "unit": "min",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "typical_daily_runtime_h": {
+          "value": null,
+          "unit": "h",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-09",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 3,
+        "coverage_pct": 50,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/electrical/power_factor",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical",
+            "duty_cycle",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw19b17334/Instructional%20Booklets/530RN.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical",
+            "region_profiles"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw05287c2e/Instructional%20Booklets/127NPN.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical",
+            "region_profiles"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.documents.philips.com/assets/20220423/4f029b58b4b54487bb48ae80011da39d.pdf",
+          "source_tier": "official",
+          "source_type": "brand_product_page",
+          "covers_fields": [
+            "region_profiles"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
       "appliance_id": "induction-cooktop",
       "name": "Portable induction cooktop",
       "aliases": [
@@ -4818,6 +5054,275 @@
           "source_type": "brand_spec_sheet",
           "covers_fields": [],
           "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        }
+      ]
+    },
+    {
+      "appliance_id": "pool-pump-variable-speed",
+      "name": "Variable-speed pool pump",
+      "aliases": [
+        "pool pump",
+        "variable speed pool pump",
+        "swimming pool pump",
+        "pool filter pump",
+        "inground pool pump",
+        "VS pool pump",
+        "pool circulation pump"
+      ],
+      "category": "water",
+      "subcategory": "variable_speed_pool_filter_pump",
+      "scenario_tags": [
+        "home_solar",
+        "home_backup"
+      ],
+      "priority_tier": "comfort",
+      "electrical": {
+        "running_watts": {
+          "value": 627,
+          "unit": "W",
+          "value_min": 121,
+          "value_max": 627,
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_low": {
+          "value": 121,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_high": {
+          "value": 627,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "running_watts_band_basis": "single_machine_modulation",
+        "startup_surge_multiplier": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://data.energystar.gov/resource/m8cf-pkii.json",
+              "https://hayward.com/media/akeneo_connector/asset_files/T/r/TriStar_VS_950_Sell_Sheet_2715.pdf",
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/intelliflo-vsf/intelliflo-vsf-om-eng.pdf"
+            ],
+            "note": "Four documents were read end to end on 2026-08-09 for an inrush, starting-current or locked-rotor figure: the EPA ENERGY STAR certified pool pump dataset, Hayward's TriStar VS 950 specification sheet, and Pentair's installation and user guides for the SuperFlo VS and the IntelliFlo VSF. None of the four carries one. The electrical quantities they do carry are all steady-state: measured power at two certified speed points, a maximum input current rating, an input voltage range, a speed range and a maximum drive input power. Two of the documents describe a variable-frequency drive that ramps the motor rather than starting it across the line, and the Pentair guide has a user-settable ramp rate, but neither states what the pump draws while ramping. A separate and larger absence is recorded alongside this one: the priming routine runs at 3450 RPM by Pentair's own default and no document in this set publishes the power drawn at that speed, so the top of this pump's real operating range is unquantified rather than merely un-surged. Our search covered these four documents; we make no claim about documents we did not open."
+          }
+        },
+        "startup_surge_watts": {
+          "value": null,
+          "unit": "W",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_duration_ms": {
+          "value": null,
+          "unit": "ms",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "surge_basis": "unknown",
+        "load_type": "inverter_driven_motor",
+        "motor_type": {
+          "value": "bldc_inverter",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        },
+        "power_factor": {
+          "value": null,
+          "unit": "ratio",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/intelliflo-vsf/intelliflo-vsf-om-eng.pdf",
+              "https://data.energystar.gov/resource/m8cf-pkii.json"
+            ],
+            "note": "Both Pentair guides list active power factor correction as a drive feature — the SuperFlo VS controller bullet list and the IntelliFlo VSF drive feature list each name it in those words — but neither states a power factor value, and the ENERGY STAR dataset carries no power factor or volt-amp column at all. A claimed capability is not a measurement. The field is left empty on purpose, which also keeps the engine's volt-amp gate shut on this record."
+          }
+        },
+        "apparent_power_va": {
+          "value": null,
+          "unit": "VA",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "requires_pure_sine": {
+          "value": null,
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown",
+          "absence_verified": {
+            "checked_date": "2026-08-09",
+            "sources_checked": [
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+              "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/intelliflo-vsf/intelliflo-vsf-om-eng.pdf"
+            ],
+            "note": "Both installation guides were read for a waveform requirement on 2026-08-09 and neither names one. What they do specify about the supply is a voltage window and a frequency — the SuperFlo VS guide states the pump accepts 99 to 253 Vrms at either 50 or 60 Hz single phase — plus wiring, breaker and bonding requirements. Neither mentions an inverter, a sine wave or a waveform of any kind. The field is left empty rather than filled by analogy with the other inverter-driven records in this library."
+          }
+        },
+        "standby_watts": {
+          "value": 3,
+          "unit": "W",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "verified_date": "2026-08-09",
+          "confidence": "high",
+          "status": "verified"
+        }
+      },
+      "duty_cycle": {
+        "default_duty_cycle": {
+          "value": 1,
+          "unit": "ratio",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "medium",
+          "status": "verified"
+        },
+        "is_cyclic": true,
+        "cycle_period_min": {
+          "value": null,
+          "unit": "min",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        },
+        "typical_daily_runtime_h": {
+          "value": 14,
+          "unit": "h",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+          "verified_date": "2026-08-09",
+          "confidence": "low",
+          "status": "verified"
+        }
+      },
+      "energy": {
+        "energy_basis": "unknown",
+        "daily_wh": {
+          "value": null,
+          "unit": "Wh",
+          "source_tier": null,
+          "source_url": null,
+          "verified_date": null,
+          "confidence": "unknown",
+          "status": "unknown"
+        }
+      },
+      "data_quality": {
+        "last_review_date": "2026-08-09",
+        "ready_for_page_generation": true,
+        "allow_runtime_figure": true,
+        "blocking_reason_count": 0,
+        "required_fields_total": 6,
+        "required_fields_verified": 3,
+        "coverage_pct": 50,
+        "unknown_field_paths": [
+          "/electrical/startup_surge_multiplier",
+          "/electrical/power_factor",
+          "/environment_corrections"
+        ]
+      },
+      "sources": [
+        {
+          "source_url": "https://data.energystar.gov/resource/m8cf-pkii.json",
+          "source_tier": "official",
+          "source_type": "government_standard",
+          "covers_fields": [
+            "electrical",
+            "region_profiles",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://hayward.com/media/akeneo_connector/asset_files/T/r/TriStar_VS_950_Sell_Sheet_2715.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "electrical"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/manuals/superflovs-variable-speed-pump-manual-english.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "duty_cycle",
+            "region_profiles",
+            "environment_corrections",
+            "compatibility_guidance"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/intelliflo-vsf/intelliflo-vsf-om-eng.pdf",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "covers_fields": [
+            "electrical"
+          ],
+          "verified_date": "2026-08-09",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/pumps/archive/superflo-vs/superflo-vs-variable-speed-pump-brochure.pdf",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [],
+          "verified_date": "2026-08-09",
           "fetch_status": "ok"
         }
       ]
