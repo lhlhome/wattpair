@@ -15,7 +15,7 @@
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
     "stats": {
       "records": 38,
-      "sourced_fields": 267,
+      "sourced_fields": 269,
       "null_fields": 254,
       "surge_basis": {
         "category_rule_of_thumb": 3,
@@ -4671,6 +4671,15 @@
           "confidence": "unknown",
           "status": "unknown"
         },
+        "voltage_domain": {
+          "value": "230v",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "source_url": "https://www.richaircomfort.com/mt-content/uploads/2023/11/m_submittal_msz-fs09na_muz-fs09nah_en.pdf",
+          "verified_date": "2026-08-10",
+          "confidence": "high",
+          "status": "verified"
+        },
         "standby_watts": {
           "value": null,
           "unit": "W",
@@ -4723,6 +4732,7 @@
             "running_watts",
             "startup_surge_multiplier",
             "power_factor",
+            "voltage_domain",
             "environment_corrections",
             "compatibility_guidance"
           ],
@@ -6018,6 +6028,15 @@
           "confidence": "unknown",
           "status": "unknown"
         },
+        "voltage_domain": {
+          "value": "230v",
+          "source_tier": "official",
+          "source_type": "brand_manual_pdf",
+          "source_url": "https://www.midea.com/content/dam/midea-aem/de/klimatisieren-heizen/portasplit/PortaSplit-Gebrauchsanweisung-DE.pdf",
+          "verified_date": "2026-08-10",
+          "confidence": "high",
+          "status": "verified"
+        },
         "standby_watts": {
           "value": null,
           "unit": "W",
@@ -6090,6 +6109,7 @@
             "electrical.apparent_power_va",
             "electrical.motor_type",
             "electrical.startup_surge_multiplier",
+            "electrical.voltage_domain",
             "region_profiles.EU",
             "environment_corrections",
             "compatibility_guidance"
