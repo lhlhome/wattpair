@@ -9,7 +9,7 @@
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
-    "date_modified": "2026-08-09",
+    "date_modified": "2026-08-11",
     "record_count": 38,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
@@ -304,7 +304,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-01",
+        "last_review_date": "2026-08-03",
         "ready_for_page_generation": true,
         "allow_runtime_figure": false,
         "blocking_reason_count": 0,
@@ -1035,7 +1035,7 @@
         "default_duty_cycle": {
           "value": 1,
           "unit": "ratio",
-          "test_conditions": "This 1.0 is a conservative ceiling, not a duty cycle the manufacturer publishes, and not a measured average. All the manufacturer's documents support is the fact that “it switches on and off”: the Pro series manual's Power Monitor Light section states, verbatim, “Red: heating” and “Green: aquarium has reached set temperature”; the TA series manual's Step 4 likewise uses the indicator light to distinguish “functioning and in heating mode” from having reached the set temperature. The manufacturer does not publish an on/off time ratio for any tier, and this site does not derive one either — duty cycle depends on ambient room temperature, tank volume, lid, and the set-point temperature differential, all of which are user-side variables. Taking 1.0 means calculating as if the thermostat is calling for heat continuously; it yields the shortest runtime and the largest power-station threshold, which is the only acceptable rounding direction for a life-support load — for a life-support load, the direction that underestimates risk is the destructive one.",
+          "test_conditions": "This 1.0 is a conservative ceiling, not a duty cycle the manufacturer publishes, and not a measured average. All the manufacturer's documents support is the fact that “it switches on and off”: the Pro series manual's Power Monitor Light section states, verbatim, “Red: heating” and “Green: aquarium has reached set temperature”; the TA series manual's Step 4 likewise uses the indicator light to distinguish “functioning and in heating mode” from having reached the set temperature. The manufacturer does not publish an on/off time ratio for any tier, and this site does not derive one either — duty cycle depends on ambient room temperature, tank volume, lid, and the set-point temperature differential, all of which are user-side variables. Taking 1.0 means calculating as if the thermostat is calling for heat continuously; it yields the shortest runtime and the largest power-station threshold, which is the only acceptable rounding direction for a life-support load — underestimating the risk is the destructive direction.",
           "source_tier": "official",
           "source_type": "brand_manual_pdf",
           "source_url": "https://www.aqueon.com/-/media/project/oneweb/aqueon/files/us/instructions/heating/pro-adjustable-heater_instructions_all-sizes-pdf.pdf",
@@ -3625,7 +3625,7 @@
         "default_duty_cycle": {
           "value": 1,
           "unit": "ratio",
-          "test_conditions": "A hair dryer draws power continuously at the selected setting for as long as the switch is closed, with no thermostat-style on/off cycling — this is fundamentally different from a heating pad (thermostat cuts off at temperature) or a refrigerator (compressor cycling). The manufacturer's manuals describe usage throughout as continuous motion: “Move dryer steadily across each section so that the hot air passes through hair”, “Keep dryer moving as you style”, with no automatic intermittent mechanism; the only automatic cutoff the manuals mention is overheat protection (a thermal breaker) and the leakage protection on the plug, both of which are fault protection, not a working cycle. This field is therefore set to 1.0 because that is how the mechanism works, not as a conservative rounding.\n\n1.0 means only “drawing full power at the selected setting the whole time it is on” — it does not mean the dryer runs for long stretches in a day. Actual use is a few minutes at a time, and no manufacturer publishes a duration, so typical_daily_runtime_h is left empty and daily_wh cannot be calculated.",
+          "test_conditions": "A hair dryer draws power continuously at the selected setting for as long as the switch is closed, with no thermostat-style on/off cycling — this is fundamentally different from an aquarium heater (thermostat cuts off at temperature) or a refrigerator (compressor cycling). The manufacturer's manuals describe usage throughout as continuous motion: “Move dryer steadily across each section so that the hot air passes through hair”, “Keep dryer moving as you style”, with no automatic intermittent mechanism; the only automatic cutoff the manuals mention is overheat protection (a thermal breaker) and the leakage protection on the plug, both of which are fault protection, not a working cycle. This field is therefore set to 1.0 because that is how the mechanism works, not as a conservative rounding.\n\n1.0 means only “drawing full power at the selected setting the whole time it is on” — it does not mean the dryer runs for long stretches in a day. Actual use is a few minutes at a time, and no manufacturer publishes a duration, so typical_daily_runtime_h is left empty and daily_wh cannot be calculated.",
           "source_tier": "official",
           "source_type": "brand_manual_pdf",
           "source_url": "https://www.conair.com/on/demandware.static/-/Library-Sites-usConairShared/default/dw4bc51039/Instructional%20Booklets/285N.pdf",
@@ -5225,7 +5225,7 @@
       },
       "energy": {},
       "data_quality": {
-        "last_review_date": "2026-08-08",
+        "last_review_date": "2026-08-10",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -6739,7 +6739,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-08",
+        "last_review_date": "2026-08-10",
         "ready_for_page_generation": true,
         "allow_runtime_figure": false,
         "blocking_reason_count": 0,
@@ -10372,7 +10372,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-08",
+        "last_review_date": "2026-08-11",
         "ready_for_page_generation": true,
         "allow_runtime_figure": false,
         "blocking_reason_count": 0,
