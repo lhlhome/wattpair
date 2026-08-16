@@ -1968,6 +1968,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -2233,6 +2234,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": 6.9,
           "unit": "ratio",
@@ -3793,6 +3795,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "single_machine_modulation",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -4016,6 +4019,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": 25,
           "unit": "ratio",
@@ -4286,6 +4290,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -7511,6 +7516,7 @@
           "confidence": "medium",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -8192,23 +8198,25 @@
       "priority_tier": "important",
       "electrical": {
         "running_watts": {
-          "value": 30,
+          "value": 40,
           "unit": "W",
           "value_min": 20,
           "value_max": 40,
-          "test_conditions": "Starlink official support center: “Starlink Mini power specifications: Average: 20-40W / Idle: 15W”; “Note that the specs are based on AC input power averages.” The specification covers the antenna, WiFi router, power supply, and cables",
+          "test_conditions": "Starlink official support center: “Starlink Mini power specifications: Average: 20-40W / Idle: 15W”; “Note that the specs are based on AC input power averages.” The specification covers the antenna, WiFi router, power supply, and cables. The point value recorded here is the range ceiling, 40 W: both official documents state that number, and it is the demanding end, so a verdict computed from it is the conservative one. The documents differ only on the floor — support center 20 W, specification sheet “Power Consumption  Average: 25-40W” — and that disagreement is carried on running_watts_low as a span rather than averaged into a midpoint no document states",
           "source_tier": "official",
           "source_type": "brand_support_kb",
           "source_url": "https://www.starlink.com/support/article/18836c7e-2d97-6153-fe67-c18427bd0558",
           "source_label": "Starlink · official support center power consumption note",
           "verified_date": "2026-08-01",
           "confidence": "medium",
-          "status": "conflict"
+          "status": "verified"
         },
         "running_watts_low": {
           "value": 20,
           "unit": "W",
-          "test_conditions": "Official support center range floor, 20 W. The specification sheet from the same manufacturer gives 25 W for the same floor; the two official documents disagree and the difference is unresolved",
+          "value_min": 20,
+          "value_max": 25,
+          "test_conditions": "The floor of the manufacturer's average-power range. Two current official documents give it differently: the support center note says 20 W (“Starlink Mini power specifications: Average: 20-40W / Idle: 15W”), the specification sheet says 25 W (“Power Consumption  Average: 25-40W”). Neither supersedes the other, so the floor itself is recorded as the 20-25 W span in value_min / value_max, with 20 W — the more demanding end for a runtime estimate to be measured against — as the point. The ceiling, 40 W, is not in dispute",
           "source_tier": "official",
           "source_type": "brand_support_kb",
           "source_url": "https://www.starlink.com/support/article/18836c7e-2d97-6153-fe67-c18427bd0558",
@@ -8229,6 +8237,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "single_machine_modulation",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -8332,18 +8341,18 @@
       "energy": {
         "energy_basis": "derived_from_duty_cycle",
         "daily_wh": {
-          "value": 720,
+          "value": 960,
           "unit": "Wh",
           "value_min": 480,
           "value_max": 960,
-          "test_conditions": "Derived: 30 W × 24 h, continuously online. 30 W is not a number stated by any source; it is the midpoint of the range in an unresolved disagreement between two official documents on the /electrical/running_watts field.",
+          "test_conditions": "Derived: 40 W × 24 h, continuously online. 40 W is the ceiling of the manufacturer's average-power range and the one figure both official documents state; it is not a daily energy figure the manufacturer publishes. The range ends give 480 Wh at 20 W and 960 Wh at 40 W",
           "source_tier": "official",
           "source_type": "brand_support_kb",
           "source_url": "https://www.starlink.com/support/article/18836c7e-2d97-6153-fe67-c18427bd0558",
           "source_label": "Starlink · official support center power consumption note",
           "verified_date": "2026-08-01",
-          "confidence": "low",
-          "status": "conflict",
+          "confidence": "medium",
+          "status": "verified",
           "is_derived": true
         }
       },
@@ -8354,10 +8363,9 @@
         "blocking_reason_count": 0,
         "blocking_reasons": [],
         "required_fields_total": 6,
-        "required_fields_verified": 4,
-        "coverage_pct": 66.7,
+        "required_fields_verified": 5,
+        "coverage_pct": 83.3,
         "unknown_field_paths": [
-          "/electrical/running_watts",
           "/electrical/startup_surge_multiplier"
         ]
       },
@@ -8839,6 +8847,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",
@@ -9389,6 +9398,7 @@
           "confidence": "high",
           "status": "verified"
         },
+        "running_watts_band_basis": "cross_model_spread",
         "startup_surge_multiplier": {
           "value": null,
           "unit": "ratio",

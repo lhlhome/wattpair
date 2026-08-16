@@ -1,0 +1,258 @@
+brand,field,checked_published,checked_absent
+ENERGY STAR (US EPA),duty_cycle.default_duty_cycle,3,1
+ENERGY STAR (US EPA),electrical.motor_type,5,0
+ENERGY STAR (US EPA),electrical.power_factor,1,1
+ENERGY STAR (US EPA),electrical.running_watts,5,0
+ENERGY STAR (US EPA),electrical.running_watts_high,5,0
+ENERGY STAR (US EPA),electrical.running_watts_low,5,0
+ENERGY STAR (US EPA),electrical.standby_watts,4,0
+ENERGY STAR (US EPA),electrical.startup_surge_multiplier,0,2
+ENERGY STAR (US EPA),electrical.voltage_domain,1,0
+ENERGY STAR (US EPA),energy.annual_kwh,5,0
+Aqueon,duty_cycle.default_duty_cycle,2,0
+Aqueon,electrical.motor_type,1,1
+Aqueon,electrical.power_factor,0,3
+Aqueon,electrical.requires_pure_sine,0,3
+Aqueon,electrical.running_watts,2,0
+Aqueon,electrical.running_watts_high,2,0
+Aqueon,electrical.running_watts_low,2,0
+Aqueon,electrical.startup_surge_multiplier,0,3
+Midea,duty_cycle.default_duty_cycle,0,3
+Midea,electrical.motor_type,1,0
+Midea,electrical.power_factor,1,0
+Midea,electrical.running_watts,2,0
+Midea,electrical.running_watts_high,2,0
+Midea,electrical.running_watts_low,2,0
+Midea,electrical.standby_watts,1,0
+Midea,electrical.startup_surge_multiplier,0,4
+Midea,electrical.voltage_domain,1,0
+Midea,energy.annual_kwh,1,0
+Midea,energy.daily_wh,1,0
+Epson,duty_cycle.default_duty_cycle,1,0
+Epson,electrical.motor_type,1,0
+Epson,electrical.power_factor,0,3
+Epson,electrical.requires_pure_sine,0,3
+Epson,electrical.running_watts,1,0
+Epson,electrical.running_watts_high,1,0
+Epson,electrical.running_watts_low,1,0
+Epson,electrical.standby_watts,1,0
+Epson,electrical.startup_surge_multiplier,0,3
+Drive DeVilbiss Healthcare,electrical.apparent_power_va,0,2
+Drive DeVilbiss Healthcare,electrical.min_voltage_tolerance_v,1,0
+Drive DeVilbiss Healthcare,electrical.motor_type,0,1
+Drive DeVilbiss Healthcare,electrical.power_factor,0,2
+Drive DeVilbiss Healthcare,electrical.requires_pure_sine,0,2
+Drive DeVilbiss Healthcare,electrical.running_watts,1,0
+Drive DeVilbiss Healthcare,electrical.running_watts_high,1,0
+Drive DeVilbiss Healthcare,electrical.running_watts_low,1,0
+Drive DeVilbiss Healthcare,electrical.startup_surge_multiplier,0,3
+US Department of Energy,duty_cycle.default_duty_cycle,3,1
+US Department of Energy,duty_cycle.typical_daily_runtime_h,1,0
+US Department of Energy,electrical.running_watts,2,0
+US Department of Energy,electrical.running_watts_high,2,0
+US Department of Energy,electrical.running_watts_low,2,0
+US Department of Energy,electrical.standby_watts,1,0
+US Department of Energy,energy.annual_kwh,1,0
+Lasko,duty_cycle.default_duty_cycle,2,0
+Lasko,electrical.motor_type,1,0
+Lasko,electrical.power_factor,1,0
+Lasko,electrical.running_watts,2,0
+Lasko,electrical.running_watts_high,2,0
+Lasko,electrical.running_watts_low,2,0
+Lasko,electrical.standby_watts,1,0
+Lasko,energy.daily_wh,1,0
+EHEIM,electrical.motor_type,0,1
+EHEIM,electrical.power_factor,0,2
+EHEIM,electrical.requires_pure_sine,0,2
+EHEIM,electrical.startup_surge_multiplier,0,6
+Tecumseh,electrical.motor_type,3,0
+Tecumseh,electrical.startup_surge_multiplier,5,0
+Tecumseh,electrical.startup_surge_watts,3,0
+Conair,duty_cycle.default_duty_cycle,1,0
+Conair,electrical.power_factor,0,2
+Conair,electrical.requires_pure_sine,0,3
+Conair,electrical.running_watts,1,0
+Conair,electrical.startup_surge_multiplier,0,3
+Franklin Electric,electrical.motor_type,1,0
+Franklin Electric,electrical.power_factor,1,0
+Franklin Electric,electrical.running_watts,1,0
+Franklin Electric,electrical.running_watts_high,1,0
+Franklin Electric,electrical.running_watts_low,1,0
+Franklin Electric,electrical.standby_watts,1,0
+Franklin Electric,electrical.startup_surge_multiplier,1,0
+Franklin Electric,electrical.startup_surge_watts,1,0
+Franklin Electric,electrical.surge_duration_ms,2,0
+Eberspächer,duty_cycle.default_duty_cycle,1,0
+Eberspächer,electrical.motor_type,1,0
+Eberspächer,electrical.running_watts,1,0
+Eberspächer,electrical.running_watts_high,1,0
+Eberspächer,electrical.running_watts_low,1,0
+Eberspächer,electrical.standby_watts,1,0
+Eberspächer,electrical.startup_surge_multiplier,1,0
+Eberspächer,electrical.startup_surge_watts,1,0
+Eberspächer,electrical.surge_duration_ms,1,0
+Mitsubishi Electric,duty_cycle.default_duty_cycle,1,0
+Mitsubishi Electric,electrical.motor_type,1,0
+Mitsubishi Electric,electrical.power_factor,1,0
+Mitsubishi Electric,electrical.running_watts,1,0
+Mitsubishi Electric,electrical.running_watts_high,1,0
+Mitsubishi Electric,electrical.running_watts_low,1,0
+Mitsubishi Electric,electrical.startup_surge_multiplier,1,0
+Mitsubishi Electric,electrical.startup_surge_watts,1,0
+Mitsubishi Electric,electrical.voltage_domain,1,0
+ResMed,duty_cycle.typical_daily_runtime_h,1,0
+ResMed,electrical.motor_type,1,0
+ResMed,electrical.power_factor,1,0
+ResMed,electrical.requires_pure_sine,1,0
+ResMed,electrical.running_watts,1,0
+ResMed,electrical.running_watts_high,1,0
+ResMed,electrical.running_watts_low,1,0
+ResMed,electrical.standby_watts,1,0
+ResMed,energy.daily_wh,1,0
+Inogen,duty_cycle.default_duty_cycle,1,0
+Inogen,electrical.apparent_power_va,0,1
+Inogen,electrical.motor_type,0,1
+Inogen,electrical.power_factor,0,1
+Inogen,electrical.requires_pure_sine,0,2
+Inogen,electrical.startup_surge_multiplier,0,2
+Pentair,duty_cycle.default_duty_cycle,1,0
+Pentair,duty_cycle.typical_daily_runtime_h,1,0
+Pentair,electrical.power_factor,0,2
+Pentair,electrical.requires_pure_sine,0,2
+Pentair,electrical.startup_surge_multiplier,0,2
+Starlink,duty_cycle.default_duty_cycle,1,0
+Starlink,electrical.motor_type,1,0
+Starlink,electrical.running_watts,1,0
+Starlink,electrical.running_watts_high,1,0
+Starlink,electrical.running_watts_low,1,0
+Starlink,electrical.standby_watts,1,0
+Starlink,electrical.startup_surge_watts,1,0
+Starlink,energy.daily_wh,1,0
+Zoeller,duty_cycle.default_duty_cycle,0,3
+Zoeller,electrical.motor_type,1,0
+Zoeller,electrical.running_watts_high,0,2
+Zoeller,electrical.running_watts_low,0,1
+Zoeller,electrical.standby_watts,1,0
+Dometic,electrical.running_watts,1,0
+Dometic,electrical.running_watts_high,1,0
+Dometic,electrical.running_watts_low,1,0
+Dometic,electrical.startup_surge_multiplier,1,0
+Dometic,electrical.startup_surge_watts,1,0
+Dometic,energy.annual_kwh,1,0
+Dometic,energy.daily_wh,1,0
+Philips,duty_cycle.default_duty_cycle,1,0
+Philips,electrical.motor_type,1,0
+Philips,electrical.power_factor,0,1
+Philips,electrical.running_watts,1,0
+Philips,electrical.running_watts_high,1,0
+Philips,electrical.running_watts_low,1,0
+Philips,electrical.startup_surge_multiplier,0,1
+Airxcel/Coleman-Mach,electrical.motor_type,1,0
+Airxcel/Coleman-Mach,electrical.power_factor,1,0
+Airxcel/Coleman-Mach,electrical.running_watts,1,0
+Airxcel/Coleman-Mach,electrical.running_watts_high,1,0
+Airxcel/Coleman-Mach,electrical.running_watts_low,1,0
+Beurer,duty_cycle.default_duty_cycle,1,0
+Beurer,electrical.motor_type,1,0
+Beurer,electrical.running_watts,1,0
+Beurer,electrical.running_watts_high,1,0
+Beurer,electrical.running_watts_low,1,0
+Bosch,duty_cycle.cycle_period_min,1,0
+Bosch,electrical.running_watts_high,0,1
+Bosch,electrical.running_watts_low,0,1
+Bosch,electrical.standby_watts,1,0
+Bosch,energy.per_use_wh,1,0
+California Air Tools,duty_cycle.cycle_period_min,1,0
+California Air Tools,duty_cycle.default_duty_cycle,1,0
+California Air Tools,duty_cycle.minutes_per_use,1,0
+California Air Tools,electrical.running_watts_low,1,0
+California Air Tools,electrical.standby_watts,1,0
+Copeland (Emerson),electrical.surge_duration_ms,5,0
+Duxtop/Secura,duty_cycle.default_duty_cycle,1,0
+Duxtop/Secura,electrical.motor_type,1,0
+Duxtop/Secura,electrical.running_watts,1,0
+Duxtop/Secura,electrical.running_watts_high,1,0
+Duxtop/Secura,electrical.running_watts_low,1,0
+GE Appliances,duty_cycle.default_duty_cycle,3,0
+GE Appliances,electrical.motor_type,1,0
+GE Appliances,electrical.running_watts_low,0,1
+Hamilton Beach,duty_cycle.default_duty_cycle,1,0
+Hamilton Beach,electrical.motor_type,1,0
+Hamilton Beach,electrical.running_watts,1,0
+Hamilton Beach,electrical.running_watts_low,0,2
+Liberty Pumps,electrical.running_watts_high,0,1
+Liberty Pumps,electrical.running_watts_low,0,2
+Liberty Pumps,electrical.startup_surge_multiplier,1,0
+Liberty Pumps,electrical.startup_surge_watts,1,0
+COSORI,duty_cycle.default_duty_cycle,1,0
+COSORI,duty_cycle.minutes_per_use,1,0
+COSORI,electrical.running_watts,1,0
+COSORI,electrical.running_watts_high,1,0
+EU JRC,duty_cycle.default_duty_cycle,1,0
+EU JRC,duty_cycle.typical_daily_runtime_h,1,0
+EU JRC,electrical.running_watts,1,0
+EU JRC,electrical.running_watts_high,1,0
+Frigidaire,electrical.running_watts,1,0
+Frigidaire,electrical.running_watts_low,1,0
+Frigidaire,energy.annual_kwh,1,0
+Frigidaire,energy.daily_wh,1,0
+Hobart Welding Products,duty_cycle.default_duty_cycle,1,0
+Hobart Welding Products,electrical.motor_type,1,0
+Hobart Welding Products,electrical.power_factor,1,0
+Hobart Welding Products,electrical.running_watts,1,0
+Intel,electrical.surge_duration_ms,4,0
+LG,electrical.motor_type,1,0
+LG,electrical.running_watts,1,0
+LG,electrical.running_watts_high,0,1
+LG,electrical.running_watts_low,0,1
+Apple,electrical.motor_type,1,0
+Apple,electrical.running_watts_low,1,0
+Apple,electrical.standby_watts,1,0
+EPREL (European Commission),electrical.startup_surge_multiplier,0,1
+EPREL (European Commission),energy.annual_kwh,1,1
+Keurig,duty_cycle.default_duty_cycle,1,0
+Keurig,electrical.running_watts,1,0
+Keurig,electrical.running_watts_high,1,0
+Little Giant (Franklin Electric),electrical.apparent_power_va,1,0
+Little Giant (Franklin Electric),electrical.power_factor,1,0
+Little Giant (Franklin Electric),electrical.running_watts,1,0
+Panasonic,electrical.motor_type,1,0
+Panasonic,electrical.running_watts,1,0
+Panasonic,electrical.running_watts_low,1,0
+Secop,electrical.motor_type,1,0
+Secop,electrical.startup_surge_multiplier,1,0
+Secop,electrical.startup_surge_watts,1,0
+Summit Appliance,electrical.running_watts,1,0
+Summit Appliance,electrical.running_watts_high,1,0
+Summit Appliance,electrical.running_watts_low,1,0
+Whynter,electrical.power_factor,1,0
+Whynter,electrical.running_watts,1,0
+Whynter,electrical.running_watts_high,1,0
+BLACK+DECKER,duty_cycle.typical_daily_runtime_h,1,0
+BLACK+DECKER,electrical.motor_type,1,0
+CEN/CENELEC,electrical.apparent_power_va,1,0
+CEN/CENELEC,electrical.running_watts_high,1,0
+EdgeStar,duty_cycle.cycle_period_min,1,0
+EdgeStar,electrical.apparent_power_va,1,0
+Lincoln Electric,electrical.running_watts_high,1,0
+Lincoln Electric,electrical.running_watts_low,1,0
+Mean Well,electrical.startup_surge_multiplier,1,0
+Mean Well,electrical.startup_surge_watts,1,0
+Porter-Cable,electrical.running_watts,1,0
+Porter-Cable,electrical.running_watts_high,1,0
+Power-Win,electrical.startup_surge_multiplier,1,0
+Power-Win,electrical.startup_surge_watts,1,0
+Russell Hobbs UK,electrical.running_watts_high,0,1
+Russell Hobbs UK,electrical.running_watts_low,0,1
+80 PLUS,electrical.power_factor,1,0
+Commission Regulation (EC) No 1275/2008,electrical.standby_watts,1,0
+Copeland,electrical.surge_duration_ms,1,0
+CyberPower,electrical.requires_pure_sine,1,0
+Fasco,electrical.motor_type,1,0
+Hayward,electrical.startup_surge_multiplier,0,1
+Little Giant,electrical.running_watts_low,0,1
+NFPA (National Electrical Code),electrical.startup_surge_multiplier,1,0
+Philips Respironics,duty_cycle.default_duty_cycle,1,0
+Sunbeam,duty_cycle.typical_daily_runtime_h,1,0
+Toshiba,electrical.running_watts_high,1,0
+Webasto,duty_cycle.cycle_period_min,1,0
