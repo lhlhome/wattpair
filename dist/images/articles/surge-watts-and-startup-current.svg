@@ -1,0 +1,13 @@
+<!-- WattPair article diagram · surge spike vs continuous line · 320x180 (16:9) grid, sw 4 ·
+     design-system/ICONOGRAPHY.md — article family. No axis numbers by design:
+     any number on a decorative diagram must carry a source/date label per the
+     site's data discipline, which this graphic does not have room for. -->
+<svg viewBox="0 0 320 180" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A startup current spike briefly crossing the inverter's surge ceiling, then settling to a much lower continuous line">
+  <line x1="24" y1="20" x2="24" y2="156"/>
+  <path d="M18 28 L24 18 L30 28"/>
+  <line x1="24" y1="156" x2="300" y2="156"/>
+  <path d="M292 148 L302 156 L292 164"/>
+  <line x1="24" y1="40" x2="290" y2="40" stroke-dasharray="3 7"/>
+  <path d="M24 156 L45 60 L60 25 L75 70 L110 120 L290 120"/>
+  <circle cx="60" cy="25" r="4" fill="currentColor"/>
+</svg>

@@ -1,0 +1,12 @@
+<!-- WattPair scene · camping · 240x160 (3:2) grid, sw 3 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A tent and a lantern at a campsite">
+  <line x1="10" y1="148" x2="230" y2="148"/>
+  <path d="M60 148 L120 76 L180 148 Z"/>
+  <line x1="120" y1="76" x2="120" y2="148"/>
+  <line x1="60" y1="148" x2="49" y2="152"/>
+  <line x1="180" y1="148" x2="191" y2="152"/>
+  <rect x="195" y="110" width="14" height="18" rx="3" fill="currentColor" fill-opacity="0.16"/>
+  <path d="M198 110 Q202 100 206 110"/>
+  <line x1="192" y1="108" x2="187" y2="103"/>
+  <line x1="212" y1="108" x2="217" y2="103"/>
+</svg>

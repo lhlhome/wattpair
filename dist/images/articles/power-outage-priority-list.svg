@@ -1,0 +1,14 @@
+<!-- WattPair article diagram · loads ranked by priority, tallest first · 320x180 (16:9) grid, sw 4 ·
+     design-system/ICONOGRAPHY.md — article family. Bar heights are relative
+     rank only, not a scale — no axis numbers, same reasoning as
+     surge-watts-and-startup-current.svg's header. -->
+<svg viewBox="0 0 320 180" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five loads arranged as a descending priority staircase, tallest bar first">
+  <line x1="20" y1="20" x2="20" y2="156"/>
+  <path d="M14 28 L20 18 L26 28"/>
+  <line x1="20" y1="156" x2="300" y2="156"/>
+  <rect x="38" y="40" width="30" height="116" rx="2" fill="currentColor" fill-opacity="0.12"/>
+  <rect x="94" y="64" width="30" height="92" rx="2"/>
+  <rect x="150" y="88" width="30" height="68" rx="2"/>
+  <rect x="206" y="112" width="30" height="44" rx="2"/>
+  <rect x="262" y="132" width="30" height="24" rx="2"/>
+</svg>

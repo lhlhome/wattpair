@@ -1,0 +1,7 @@
+<!-- WattPair appliance icon · diesel heater · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diesel heater">
+  <rect x="4" y="14" width="12" height="7" rx="1.5"/>
+  <path d="M14 14 L14 9 Q14 7 16 7 L19 7"/>
+  <path d="M8 16 C7 17 7 18.2 8 19 C9 18.2 9 17 8 16 Z"/>
+  <line x1="4" y1="17.5" x2="1.5" y2="17.5"/>
+</svg>

@@ -1,0 +1,12 @@
+<!-- WattPair appliance icon · window air conditioner · 24-unit grid, sw 1.5 ·
+     design-system/ICONOGRAPHY.md — AC trio member: boxy flush unit flanked
+     by vertical window-jamb lines, sitting on a sill BELOW it. See mini-split.svg
+     and rv-ac.svg headers for how the other two are built differently on purpose. -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Window air conditioner">
+  <line x1="2" y1="19" x2="22" y2="19"/>
+  <rect x="4" y="9" width="16" height="10" rx="1"/>
+  <line x1="3" y1="19" x2="3" y2="8"/>
+  <line x1="21" y1="19" x2="21" y2="8"/>
+  <line x1="10" y1="11.5" x2="10" y2="16.5"/>
+  <line x1="14" y1="11.5" x2="14" y2="16.5"/>
+</svg>

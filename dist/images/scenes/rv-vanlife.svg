@@ -1,0 +1,12 @@
+<!-- WattPair scene · RV and vanlife · 240x160 (3:2) grid, sw 3 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An RV with a rooftop air conditioner">
+  <line x1="10" y1="150" x2="230" y2="150"/>
+  <path d="M28 138 V108 Q28 90 48 90 H172 Q184 90 184 104 V138 Z"/>
+  <circle cx="64" cy="138" r="12"/>
+  <circle cx="160" cy="138" r="12"/>
+  <rect x="70" y="100" width="40" height="20" rx="4"/>
+  <line x1="150" y1="100" x2="150" y2="138"/>
+  <rect x="90" y="76" width="30" height="16" rx="3"/>
+  <line x1="96" y1="84" x2="114" y2="84"/>
+  <line x1="96" y1="89" x2="114" y2="89"/>
+</svg>

@@ -1,0 +1,11 @@
+<!-- WattPair appliance icon · router + modem · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md
+     Two straight antenna rods carry the identity (rework note: see
+     ICONOGRAPHY.md §6 — thin wifi arcs were sized as an accent and vanished
+     entirely at 40px; a straight radiating mark survives small sizes far
+     better than a thin curve does). -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Router and modem">
+  <rect x="3" y="15" width="18" height="6" rx="2"/>
+  <line x1="8" y1="15" x2="5" y2="4"/>
+  <line x1="16" y1="15" x2="19" y2="4"/>
+  <circle cx="12" cy="18" r="1"/>
+</svg>

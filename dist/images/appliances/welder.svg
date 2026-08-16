@@ -1,0 +1,9 @@
+<!-- WattPair appliance icon · stick welder · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stick welder">
+  <rect x="3" y="13" width="9" height="8" rx="1.5"/>
+  <path d="M12 15 C16 14 17 11 19 9"/>
+  <path d="M18.3 8 L21 6.5 L21.8 7.8 L19 9.3 Z"/>
+  <line x1="21.5" y1="7" x2="23" y2="6"/>
+  <line x1="21.5" y1="7" x2="23" y2="8.3"/>
+  <line x1="21.5" y1="7" x2="22.3" y2="5"/>
+</svg>

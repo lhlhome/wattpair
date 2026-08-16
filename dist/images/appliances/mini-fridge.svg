@@ -1,0 +1,8 @@
+<!-- WattPair appliance icon · mini fridge · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md
+     Squat/wide single-door cube (no divider, one handle) — deliberately NOT
+     a small copy of fridge.svg's tall two-door proportions, since the two
+     icon_keys never share a slug but do share family DNA. -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mini fridge">
+  <rect x="4" y="7" width="16" height="14" rx="2"/>
+  <line x1="17" y1="10" x2="17" y2="14"/>
+</svg>

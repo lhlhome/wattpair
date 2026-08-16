@@ -1,0 +1,14 @@
+<!-- WattPair scene · blackout backup · 240x160 (3:2) grid, sw 3 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A house kept running during a grid blackout">
+  <line x1="14" y1="142" x2="226" y2="142"/>
+  <line x1="40" y1="60" x2="40" y2="142"/>
+  <line x1="26" y1="66" x2="54" y2="66"/>
+  <path d="M54 66 C76 66 90 74 98 84"/>
+  <path d="M98 84 q3 5 0 9"/>
+  <path d="M118 96 L150 70 L182 96 Z"/>
+  <rect x="126" y="96" width="48" height="46"/>
+  <rect x="145" y="120" width="12" height="22"/>
+  <rect x="132" y="104" width="14" height="12" fill="currentColor" fill-opacity="0.16"/>
+  <path d="M143 66 C143 60 157 60 157 66"/>
+  <path d="M138 66 C138 54 162 54 162 66"/>
+</svg>

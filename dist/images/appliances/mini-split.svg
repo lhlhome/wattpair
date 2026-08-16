@@ -1,0 +1,13 @@
+<!-- WattPair appliance icon · ductless mini-split (wall unit) · 24-unit grid, sw 1.5 ·
+     design-system/ICONOGRAPHY.md — AC trio member: thin/wide strip flush to
+     a wall line ABOVE it, airflow ticks fanning down. See §6/§9: rv-ac is a
+     domed shroud on a roofline BELOW it; window-ac is a boxy unit flanked by
+     vertical jambs on a sill BELOW it. Three different structures on purpose. -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mini-split air conditioner">
+  <line x1="2" y1="7" x2="22" y2="7"/>
+  <rect x="3" y="7" width="18" height="5.5" rx="2"/>
+  <circle cx="19" cy="9.8" r="0.7"/>
+  <line x1="7" y1="12.5" x2="6" y2="16"/>
+  <line x1="12" y1="12.5" x2="12" y2="17"/>
+  <line x1="17" y1="12.5" x2="18" y2="16"/>
+</svg>

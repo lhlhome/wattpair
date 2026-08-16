@@ -1,0 +1,15 @@
+<!-- WattPair appliance icon · RV rooftop air conditioner · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md
+     Wide flat shroud on the roofline + a fan roundel carry the identity
+     (rework note: see ICONOGRAPHY.md §6 — v1's parallel horizontal lines read
+     as a document; v2's tall narrow dome read as a hat. A rooftop AC shroud
+     is wide and low, not tall — proportion is what tells it apart from a hat
+     — and the tri-blade roundel is the one mark this object owns that a
+     generic box does not.) -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RV rooftop air conditioner">
+  <line x1="2" y1="19" x2="22" y2="19"/>
+  <path d="M4 19 L4 15 Q4 12 8 12 L16 12 Q20 12 20 15 L20 19 Z"/>
+  <circle cx="12" cy="15.8" r="2.3"/>
+  <line x1="12" y1="15.8" x2="12" y2="14"/>
+  <line x1="12" y1="15.8" x2="10.44" y2="16.7"/>
+  <line x1="12" y1="15.8" x2="13.56" y2="16.7"/>
+</svg>

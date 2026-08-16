@@ -1,0 +1,7 @@
+<!-- WattPair appliance icon · aquarium heater (submersible rod) · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aquarium heater">
+  <rect x="10.5" y="7" width="3" height="13" rx="1.5"/>
+  <circle cx="12" cy="5" r="2"/>
+  <rect x="9.5" y="20" width="5" height="1.8" rx="0.9"/>
+  <path d="M15.5 10 q1.5 1 0 2 q-1.5 1 0 2 q1.5 1 0 2"/>
+</svg>

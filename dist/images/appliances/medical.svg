@@ -1,0 +1,8 @@
+<!-- WattPair appliance icon · oxygen concentrator (generic medical device) · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oxygen concentrator">
+  <rect x="4" y="6" width="13" height="14" rx="2"/>
+  <line x1="10.5" y1="10" x2="10.5" y2="14"/>
+  <line x1="8.5" y1="12" x2="12.5" y2="12"/>
+  <path d="M17 15 C20 16 20 18 22 19"/>
+  <circle cx="22.5" cy="19.5" r="1.2"/>
+</svg>

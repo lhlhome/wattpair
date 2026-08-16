@@ -1,0 +1,14 @@
+<!-- WattPair appliance icon · CPAP machine · 24-unit grid, sw 1.5 · design-system/ICONOGRAPHY.md
+     A notched mask cushion (nose-bridge dip at the top edge, not a smooth
+     round top) + hose + small unit carry the identity (rework note: see
+     ICONOGRAPHY.md §6 — three earlier passes all kept a smooth oval/wedge
+     outline, and "smooth closed shape + one line + small shape" reads as a
+     magnifying glass or balloon-on-a-string regardless of the outline's exact
+     form. The nose-bridge notch is the one contour a lens, a balloon and a
+     pan never have — this is the icon most worth re-checking against real
+     users; see ICONOGRAPHY.md §6 for the honest confidence level on this one.) -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CPAP machine">
+  <path d="M5 9 C5 5.8 6.8 4.3 9 5.3 C11.2 4.3 13 5.8 13 9 L13 12.5 C13 14.3 11.2 15 9 15 C6.8 15 5 14.3 5 12.5 Z"/>
+  <path d="M9 15 C9 17 10.5 17.5 12 18.5 C13.5 19.5 14.5 19.8 16 20"/>
+  <rect x="15.5" y="18.7" width="5" height="3.5" rx="1"/>
+</svg>

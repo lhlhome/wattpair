@@ -1,0 +1,14 @@
+<!-- WattPair article diagram · panel tilt angle vs incoming sun · 320x180 (16:9) grid, sw 4 ·
+     design-system/ICONOGRAPHY.md — article family. Angle is illustrative
+     geometry, not a measured value — no degree number, same reasoning as the
+     other two article diagrams' headers. -->
+<svg viewBox="0 0 320 180" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A balcony panel mounted at an angle from the rail, with sun rays arriving at an oblique angle and an arc marking the tilt">
+  <line x1="60" y1="24" x2="60" y2="156"/>
+  <line x1="20" y1="156" x2="300" y2="156"/>
+  <rect x="60" y="56" width="92" height="9" rx="3" transform="rotate(-35 60 60.5)"/>
+  <path d="M60 40 A20 20 0 0 1 76.5 48.5"/>
+  <circle cx="258" cy="42" r="15" fill="currentColor" fill-opacity="0.16"/>
+  <line x1="233" y1="56" x2="176" y2="95"/>
+  <line x1="244" y1="66" x2="187" y2="105"/>
+  <line x1="255" y1="76" x2="198" y2="115"/>
+</svg>
