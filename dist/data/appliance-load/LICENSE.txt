@@ -1,0 +1,45 @@
+WattPair Appliance Load & Surge Provenance Dataset
+Version 0.2.0 — last modified 2026-08-09
+https://wattpair.com/data/appliance-load/
+
+LICENCE
+CC BY 4.0 (Creative Commons Attribution 4.0 International)
+Deed:       https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this dataset, including commercially, provided
+you give appropriate credit, link to the licence, and indicate if changes were
+made. You may not apply legal terms or technological measures that legally
+restrict others from doing anything the licence permits.
+
+REQUIRED ATTRIBUTION
+CC BY 4.0 permits the licensor to specify the name and URI to be retained.
+Reproduce the following, or a link-preserving equivalent:
+
+    WattPair Appliance Load & Surge Provenance Dataset
+© WattPair — CC BY 4.0
+Source: https://wattpair.com/data/appliance-load/
+
+WHAT IS COVERED
+The compilation published by WattPair: the selection of figures, the
+per-field provenance (source URL, source tier and type, verification date,
+confidence, status and test conditions), the explicit nulls, the surge-basis
+labelling, and the structure of the files at:
+    /data/appliance-load/wattpair-appliance-load.json
+    /data/appliance-load/wattpair-appliance-load.csv
+
+WHAT IS NOT COVERED
+The underlying source documents — manufacturer specification sheets, manuals,
+government efficiency filings and standards documents — remain the property of
+their respective publishers and are not sub-licensed here. Each figure names the
+document it came from so it can be verified at the source. Individual
+measurements are facts and are not subject to copyright. Short verbatim
+quotations that appear inside test_conditions are quoted from those documents
+under their own terms; they are not offered under CC BY 4.0.
+
+NO WARRANTY
+Published as-is. Figures are compiled from published documents and are not
+independent laboratory measurements by WattPair. The dataset is deliberately
+incomplete and records where: fields with no published figure are present and
+null rather than estimated. Verify against the cited source before relying on
+any figure for electrical sizing or safety decisions.
