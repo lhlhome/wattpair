@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "WattPair Appliance Load & Surge Provenance Dataset"
 version: "0.2.0"
-date-released: "2026-08-11"
+date-released: "2026-08-18"
 url: "https://wattpair.com/data/appliance-load/"
 license: CC-BY-4.0
 type: dataset

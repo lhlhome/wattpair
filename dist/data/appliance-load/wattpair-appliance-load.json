@@ -9,7 +9,7 @@
     "attribution": "WattPair Appliance Load & Surge Provenance Dataset\n© WattPair — CC BY 4.0\nSource: https://wattpair.com/data/appliance-load/",
     "canonical_url": "https://wattpair.com/data/appliance-load/",
     "creator": "WattPair",
-    "date_modified": "2026-08-11",
+    "date_modified": "2026-08-18",
     "record_count": 38,
     "method": "Compiled with AI assistance from manufacturer documents, government efficiency filings and standards bodies, then checked against the cited source. Every non-null figure carries the URL it was read from, so any claim here can be re-derived from public documents without trusting this file.",
     "coverage_note": "This dataset is deliberately incomplete and says where. For several appliance classes we have found no published start-up surge figure; those fields are null with a status of unknown rather than estimated, and the site makes no claim that the figure exists nowhere. Where a null field carries an absence_verified block, that block names the documents that were read and the date they were read on. Read stats.null_fields, stats.absence_verified_fields and stats.surge_basis before using any figure.",
@@ -2352,12 +2352,12 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "voluntary_certification_program",
         "annual_kwh": {
           "value": 49.6,
           "unit": "kWh",
           "display_precision": 1,
-          "test_conditions": "ENERGY STAR dataset, desktop TEC mean 49.6 kWh/year (n=281); discrete-GPU subset 74.3 kWh/year",
+          "test_conditions": "ENERGY STAR certified computers dataset (data.energystar.gov, Socrata API), desktops, TEC (typical energy consumption) mean 49.6 kWh/year, n=281; discrete-GPU subset 74.3 kWh/year. A voluntary certification programme's public register, not a government label: computers carry no FTC EnergyGuide label at all.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://data.energystar.gov/resource/rxdj-2c88.json",
@@ -4129,12 +4129,12 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "voluntary_certification_program",
         "annual_kwh": {
           "value": 14.02,
           "unit": "kWh",
           "display_precision": 2,
-          "test_conditions": "ENERGY STAR dataset, 13–16.5-inch notebooks TEC (typical annual energy consumption) mean 14.02 kWh/year, n=1016",
+          "test_conditions": "ENERGY STAR certified computers dataset (data.energystar.gov, Socrata API), 13–16.5-inch notebooks, TEC (typical energy consumption) mean 14.02 kWh/year, n=1016. A voluntary certification programme's public register, not a government label: computers carry no FTC EnergyGuide label at all.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://data.energystar.gov/resource/rxdj-2c88.json",
@@ -4930,14 +4930,14 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "voluntary_certification_program",
         "annual_kwh": {
           "value": 228,
           "unit": "kWh",
           "value_min": 226,
           "value_max": 268,
           "display_precision": 0,
-          "test_conditions": "Annual energy use on the DOE 10 CFR 430 certification basis (standard steady-state door-closed test, not a user field measurement). The sibling field in this record, us_federal_standard_kwh_yr = 254 kWh/year, is the federal limit for this model's product class. This round did not obtain the verbatim ambient-temperature constant from the test procedure, so no specific ambient temperature is asserted here.",
+          "test_conditions": "ENERGY STAR certified residential refrigerators dataset (data.energystar.gov, Socrata API), Danby DCR044B1BM/SLM/WM. Annual energy use on the DOE 10 CFR 430 certification basis (standard steady-state door-closed test, not a user field measurement). The sibling field in this record, us_federal_standard_kwh_yr = 254 kWh/year, is the federal limit for this model's product class. This round did not obtain the verbatim ambient-temperature constant from the test procedure, so no specific ambient temperature is asserted here.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://data.energystar.gov/resource/p5st-her9.json",
@@ -6356,7 +6356,7 @@
         }
       },
       "energy": {
-        "energy_basis": "eu_energy_label",
+        "energy_basis": "manufacturer_declared_standard",
         "annual_kwh": {
           "value": 81,
           "unit": "kWh",
@@ -6387,7 +6387,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-08",
+        "last_review_date": "2026-08-18",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -7281,13 +7281,13 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "manufacturer_declared_standard",
         "annual_kwh": {
           "value": 410,
           "unit": "kWh",
           "value_min": 410,
           "value_max": 658,
-          "test_conditions": "Manufacturer specification sheet, Annual Energy 410 kWh; Total Capacity 18.3 Cu. Ft.; Refrigerant R-600A",
+          "test_conditions": "Frigidaire FFTR1814W manufacturer specification sheet, Annual Energy 410 kWh; Total Capacity 18.3 Cu. Ft.; Refrigerant R-600A. The maker's own sheet stating the DOE 10 CFR 430 annual-energy quantity — the same quantity the EnergyGuide label carries for this class, but read here out of the specification sheet rather than off a label.",
           "source_tier": "official",
           "source_type": "brand_spec_sheet",
           "source_url": "https://na2.electroluxmedia.com/Original/Electrolux/Electrolux%20Assets/Document/Product%20Specifications%20Sheet/English/FFTR1814W_EN.pdf",
@@ -8954,14 +8954,14 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "voluntary_certification_program",
         "annual_kwh": {
           "value": 200.18,
           "unit": "kWh",
           "value_min": 60.49,
           "value_max": 307.74,
           "display_precision": 1,
-          "test_conditions": "ENERGY STAR dataset, 54–66 inch segment, measured mean annual energy use (calculated using the Appendix H 5 h/day assumption)",
+          "test_conditions": "ENERGY STAR certified televisions dataset (data.energystar.gov, Socrata API), 54–66 inch segment, mean of the certified models' annual energy use (each computed on the DOE Appendix H 5 h/day assumption). A voluntary certification programme's public register: televisions do carry an FTC EnergyGuide label, but no label states a segment mean — this figure is an average across certified models, not any one machine's label.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://data.energystar.gov/resource/pd96-rr3d.json",
@@ -9219,13 +9219,13 @@
         }
       },
       "energy": {
-        "energy_basis": "eu_energy_label",
+        "energy_basis": "manufacturer_declared_standard",
         "per_use_wh": {
           "value": 1048,
           "unit": "Wh",
           "value_min": 220,
           "value_max": 1440,
-          "test_conditions": "Bosch, published under EU Ecodesign regulation: Eco 40-60, 8,0 kg full load, 1,048 kWh/cycle; tested with 15 °C cold-water inlet",
+          "test_conditions": "Bosch WAN28281GB user manual, section 20 «Consumption values» (the table's own header: “The following information is provided in accordance with the EU Ecodesign Regulation”): Eco 40-60, 8,0 kg rated load, 1,048 kWh/cycle, 3:35, cold-water inlet 15 °C. This is the manufacturer's own declaration printed in its manual under EN 60456 / the EU Ecodesign information requirements — it is NOT the figure printed on the EU energy label, which for this same model is 0,627 kWh/cycle (see cross_check).",
           "source_tier": "official",
           "source_type": "brand_manual_pdf",
           "source_url": "https://media3.bosch-home.com/Documents/9001720787_A.pdf",
@@ -9253,7 +9253,7 @@
         }
       },
       "data_quality": {
-        "last_review_date": "2026-08-08",
+        "last_review_date": "2026-08-18",
         "ready_for_page_generation": true,
         "allow_runtime_figure": true,
         "blocking_reason_count": 0,
@@ -9278,6 +9278,19 @@
             "running_watts_low.absence_verified"
           ],
           "verified_date": "2026-08-08",
+          "fetch_status": "ok"
+        },
+        {
+          "source_url": "https://media3.bosch-home.com/Documents/eudatasheet/en-GB/WAN28281GB.pdf",
+          "source_name": "Bosch · WAN28281GB statutory Product information sheet under Commission Delegated Regulation (EU) 2019/2014 (BSH Hausgeräte GmbH, footer dated 20.12.2022, on the manufacturer's own media host) — the EU-energy-label declaration for this exact model: 0.627 kWh/cycle on eco 40-60, class C, EEIW 69.0",
+          "source_tier": "official",
+          "source_type": "brand_spec_sheet",
+          "covers_fields": [
+            "energy.energy_basis",
+            "energy.per_use_wh.cross_check",
+            "region_profiles.EU.annual_kwh.absence_verified"
+          ],
+          "verified_date": "2026-08-18",
           "fetch_status": "ok"
         },
         {
@@ -10011,18 +10024,18 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "derived_from_duty_cycle",
         "annual_kwh": {
           "value": 625,
           "unit": "kWh",
           "value_min": 500,
           "value_max": 750,
           "display_precision": 0,
-          "test_conditions": "Federal-basis annual energy use: cooling mode 750 h/year, with capacity and power measured per App F §4.1.2 (condenser inlet dry-bulb 95 °F, AHAM RAC-1 / ANSI-ASHRAE 16). This is the label basis, not a user's field measurement.",
+          "test_conditions": "Not read from any document: computed here from this record's own running watts and the statutory operating-hours constant, AEC = 0.75 × Pcool (10 CFR 430 App F §5.2.1, cooling mode 750 h/year), with the power itself measured per App F §4.1.2 (condenser inlet dry-bulb 95 °F, AHAM RAC-1 / ANSI-ASHRAE 16). The federal basis the EnergyGuide label uses — but the arithmetic is ours, so this figure carries no authority its running-watts input does not already have.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol3/pdf/CFR-2024-title10-vol3-part430-subpartB-appF.pdf",
-          "source_label": "10 CFR 430 App F §5.2.1 AEC defining equation (EnergyGuide label annual-energy basis)",
+          "source_label": "10 CFR 430 App F §5.2.1 AEC defining equation — the coefficient this figure was computed with, not a document stating the figure",
           "verified_date": "2026-08-03",
           "confidence": "medium",
           "status": "verified",
@@ -10364,14 +10377,14 @@
         }
       },
       "energy": {
-        "energy_basis": "us_energyguide",
+        "energy_basis": "voluntary_certification_program",
         "annual_kwh": {
           "value": 500,
           "unit": "kWh",
           "value_min": 375,
           "value_max": 600,
           "display_precision": 0,
-          "test_conditions": "Federal-basis annual energy use (10 CFR 430 App F §5.2.1 AEC defining equation): cooling mode 750 h/year, with capacity and power measured per App F §4.1.2 (condenser inlet dry-bulb 95 °F, AHAM RAC-1 / ANSI-ASHRAE 16). This is the label basis, not a user’s field measurement.",
+          "test_conditions": "ENERGY STAR certified room air conditioners dataset (data.energystar.gov, Socrata API), model MAW10V1QWT, field annual_energy_use_kwh_yr — read straight out of the certification record, not recomputed here. Federal basis (10 CFR 430 App F §5.2.1 AEC defining equation): cooling mode 750 h/year, with capacity and power measured per App F §4.1.2 (condenser inlet dry-bulb 95 °F, AHAM RAC-1 / ANSI-ASHRAE 16). A certification-programme register value on the same statutory basis the EnergyGuide label uses — not a user’s field measurement, and not the label document itself.",
           "source_tier": "official",
           "source_type": "government_standard",
           "source_url": "https://data.energystar.gov/resource/5xn2-dv4h.json",
